@@ -22,34 +22,7 @@
     <div class="site-wrapper">
         <div class="site-wrapper-inner">
             <div class="cover-container">
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <span class="col-md-4">
-                            <ul class="nav masthead-nav">
-                                <li><a href="."><img src="assets/img/uwave.png" /></a></li>
-                            </ul>
-                        </span>
-                        <span class="col-md-4">
-                            <ul class="nav masthead-nav">
-                                <li><a href=".">Home</a></li>
-                                <li><a href="about">About</a></li>
-                                <li class="active"><a href="getinvolved">Get Involved</a></li>
-                                <li><a href="contact">Contact Us</a></li>
-                                <li><a href="schedule">Schedule</a></li>
-                                <li><a href="blog">Blog</a></li>
-                                <li><a href="donate">Donate</a></li>
-                            </ul>
-                        </span>
-                        <span class="col-md-4">
-                            <ul class="nav masthead-nav">
-                                <li><a href="https://twitter.com/UWaveRadio"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://facebook.com/UWaveRadio"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://github.com/UWave"><i class="fa fa-github"></i></a></li>
-                                <li><a href="#"><i class="glyphicon glyphicon-play-circle"></i></a></li>
-                            </ul>
-                        </span>
-                    </div>
-                </div>
+                <?php require('head.php'); ?>
                 <div class="content container">
                     <h1>Get Involved</h1>
                     There are a number of ways to get involved in UWave:
