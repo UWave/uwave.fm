@@ -10,14 +10,12 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
+.btn-play,
+.btn-play:hover,
+.btn-play:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-  opacity: 0.75;
+  background-color: #333;
+  border: 0;
 }
 
 
