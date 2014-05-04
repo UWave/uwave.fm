@@ -80,8 +80,7 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #cc1f2e; /* IE8 proofing */
-// color: rgba(255,255,255,.75);
+  color: #cc1f2e;
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
