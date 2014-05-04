@@ -127,11 +127,10 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -154,7 +153,9 @@ body {
 }
 
 .content {
+    min-height: calc(100%-60px);
     padding-top: 100px;
+    padding-bottom: 100px;
     height: 100%;
     color: #ccc;
     text-align: left;
