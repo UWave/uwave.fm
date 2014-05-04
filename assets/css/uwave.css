@@ -15,6 +15,7 @@ a:hover {
 .btn-play:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #333;
+  color: #ccc;
   border: 0;
 }
 
@@ -145,17 +146,14 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
-
 /*
  * Red things. Lots of red things
  */
 .red {
     color: #cc1f2e;
+}
+
+.content {
+    height: 100%;
+    color: #ccc;
 }
