@@ -12,7 +12,7 @@
                                 <li<?php if($_SERVER['SCRIPT_NAME'] == "/getinvolved.php") {?> class="active"<?php } ?>><a href="getinvolved.php">Get Involved</a></li>
                                 <li<?php if($_SERVER['SCRIPT_NAME'] == "/contact.php") {?> class="active"<?php } ?>><a href="contact.php">Contact Us</a></li>
                                 <li<?php if($_SERVER['SCRIPT_NAME'] == "/schedule.php") {?> class="active"<?php } ?>><a href="schedule.php">Schedule</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/blog.php") {?> class="active"<?php } ?>><a href="blog.php">Blog</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/listen.php") {?> class="active"<?php } ?>><a href="listen.php">Listen</a></li>
                                 <li<?php if($_SERVER['SCRIPT_NAME'] == "/donate.php") {?> class="active"<?php } ?>><a href="donate.php">Donate</a></li>
                             </ul>
                         </span>
@@ -21,7 +21,7 @@
                                 <li><a href="https://twitter.com/UWaveRadio"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://facebook.com/UWaveRadio"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave"><i class="fa fa-github"></i></a></li>
-                                <li><a href="#" class="tunein"><i class="glyphicon glyphicon-play-circle playpause"></i></a></li>
+                                <li><a href="/listen.php" class="tunein"><i class="glyphicon glyphicon-play-circle playpause"></i></a></li>
                             </ul>
                         </span>
                     </div>

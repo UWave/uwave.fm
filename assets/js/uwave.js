@@ -15,6 +15,7 @@ $(document).ready(function() {
                 .addClass("glyphicon-play-circle");
             $(uwave).trigger("pause");
         }
+        return false;
     }
 
     $(".tunein").on("click", uwave.playpause)
