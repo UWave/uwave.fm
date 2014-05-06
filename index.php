@@ -26,7 +26,7 @@
                 <div class="inner cover">
                     <p class="lead">
                         <img src="assets/img/swoosh.png"><br />
-                        <a href="live" class="btn btn-lg btn-play"><i class="glyphicon glyphicon-play-circle"></i> Tune in</a>
+                        <a href="#" class="btn btn-lg btn-play"><i class="glyphicon glyphicon-play-circle playpause"></i> <span class="playtext">Tune in</span></a>
                     </p>
                 </div>
             </div>
@@ -38,8 +38,20 @@
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/uwave.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".btn-play").on("click", uwave.playpause);
+            $(uwave).on("play", function() {
+                $(".playtext").text("Pause");
+            });
+            $(uwave).on("pause", function() {
+                $(".playtext").text("Tune in");
+            });
+        });
+    </script>
   </body>
 </html>

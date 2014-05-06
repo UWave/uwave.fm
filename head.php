@@ -21,8 +21,12 @@
                                 <li><a href="https://twitter.com/UWaveRadio"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://facebook.com/UWaveRadio"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave"><i class="fa fa-github"></i></a></li>
-                                <li><a href="#"><i class="glyphicon glyphicon-play-circle"></i></a></li>
+                                <li><a href="#" class="tunein"><i class="glyphicon glyphicon-play-circle playpause"></i></a></li>
                             </ul>
                         </span>
                     </div>
                 </div>
+                <audio id="player">
+                    <source src="http://live.uwave.fm:8000/listen-128.ogg" type="audio/ogg">
+                    <source src="http://live.uwave.fm:8000/listen-128.mp3" type="audio/mp3">
+                </audio>
