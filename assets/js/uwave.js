@@ -18,11 +18,20 @@ $(document).ready(function() {
         e.preventDefault();
     };
 
+    // These functions are just for the home page
     $(uwave).on("play", function() {
         $(".playtext").text("Pause");
     });
     $(uwave).on("pause", function() {
         $(".playtext").text("Tune in");
+    });
+    $(uwave).on("pageload", function() {
+        if(!uwave.player.paused) {
+            $(".playtext").text("Pause");
+            $(".btn-play .playpause")
+                .removeClass("glyphicon-play-circle")
+                .addClass("glyphicon-pause");
+        }
     });
 
     $(".navlink").on("click", function(e) {
@@ -31,6 +40,7 @@ $(document).ready(function() {
         $.get(newurl + "?contentonly").success(function(data) {
             $(".pagecontents").html(data);
             history.pushState(null, null, newurl);
+            $(uwave).trigger("pageload", newurl);
         });
         e.preventDefault();
     });
