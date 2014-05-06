@@ -19,8 +19,8 @@ $(document).ready(function() {
     };
 
     $(".navlink").on("click", function(e) {
-        console.log(arguments);
-        var newurl = event.currentTarget.href;
+        var newurl = e.currentTarget.href;
+        console.log("Navigating to", newurl);
         $.get(newurl + "?contentonly").success(function(data) {
             $(".content").html(data);
             history.pushState(null, null, newurl);
