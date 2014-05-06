@@ -8,12 +8,12 @@
                         <span class="col-md-4">
                             <ul class="nav masthead-nav">
                                 <li<?php if($_SERVER['SCRIPT_NAME'] == "/index.php") {?> class="active"><?php } ?>><a href="/">Home</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/about.php") {?> class="active"><?php } ?>><a href="about">About</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/getinvolved.php") {?> class="active"><?php } ?>><a href="getinvolved">Get Involved</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/contact.php") {?> class="active"><?php } ?>><a href="contact">Contact Us</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/schedule.php") {?> class="active"><?php } ?>><a href="schedule">Schedule</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/blog.php") {?> class="active"><?php } ?>><a href="blog">Blog</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/donate.php") {?> class="active"><?php } ?>><a href="donate">Donate</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/about.php") {?> class="active"><?php } ?>><a href="about.php">About</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/getinvolved.php") {?> class="active"><?php } ?>><a href="getinvolved.php">Get Involved</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/contact.php") {?> class="active"><?php } ?>><a href="contact.php">Contact Us</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/schedule.php") {?> class="active"><?php } ?>><a href="schedule.php">Schedule</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/blog.php") {?> class="active"><?php } ?>><a href="blog.php">Blog</a></li>
+                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/donate.php") {?> class="active"><?php } ?>><a href="donate.php">Donate</a></li>
                             </ul>
                         </span>
                         <span class="col-md-4">
