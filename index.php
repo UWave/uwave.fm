@@ -1,3 +1,4 @@
+<?php if(!isset($_GET['contentonly'])) {?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,11 +24,12 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="inner cover">
+                <div class="inner cover"><?php } ?>
                     <p class="lead">
                         <img src="assets/img/swoosh.png"><br />
                         <a href="/listen.php" class="btn btn-lg btn-play"><i class="glyphicon glyphicon-play-circle playpause"></i> <span class="playtext">Tune in</span></a>
                     </p>
+                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
             </div>
         </div>
@@ -46,3 +48,4 @@
     </script>
   </body>
 </html>
+<?php } ?>

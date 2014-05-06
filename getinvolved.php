@@ -1,3 +1,4 @@
+<?php if(!isset($_GET['contentonly'])) {?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +24,7 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="content container">
+                <div class="content container"><?php } ?>
                     <h1>Get Involved</h1>
                     There are a number of ways to get involved in UWave:
                     <ul>
@@ -46,10 +47,12 @@
                             Interested in promoting your group or event through UWave? Fill out the
                             form above and smeone will get in contact with you.
                         </ul>
+                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
             </div>
         </div>
     </div>
-    <?php require("foot.php"); ?>
+<?php require("foot.php"); ?>
   </body>
 </html>
+<?php } ?>

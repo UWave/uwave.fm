@@ -1,3 +1,4 @@
+<?php if(!isset($_GET['contentonly'])) {?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,6 +25,7 @@
             <div class="cover-container">
                 <?php require('head.php'); ?>
                 <div class="content container">
+                <?php } ?>
                     <h1>Contact UWave</h1>
                     If you have any questions or otherwise need to get in touch with us, the best
                     way is just to email <a href="mailto:info@uwave.fm">info@uwave.fm</a>.<br />
@@ -42,6 +44,7 @@
                             Box 358561<br />
                             Bothell, WA 98011
                         </p>
+                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
             </div>
         </div>
@@ -49,3 +52,4 @@
     <?php require("foot.php"); ?>
   </body>
 </html>
+<?php } ?>

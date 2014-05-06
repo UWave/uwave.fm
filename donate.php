@@ -1,3 +1,4 @@
+<?php if(!isset($_GET['contentonly'])) {?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +24,7 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="content container">
+                <div class="content container"><?php } ?>
                     <h1>Donate</h1>
                     We accept donations through our gift account with the UW.
                     <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=UWAVEB">Click here to donate to UWave Radio</a>.
@@ -71,11 +72,13 @@
                     For more information on UWave Radio, please visit our <a href="about">about</a> page.
 
                     Thank you for supporting UWave Radio, UWB’s student-run community radio station!
+                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
 
             </div>
         </div>
     </div>
-    <?php require("foot.php"); ?>
+<?php require("foot.php"); ?>
   </body>
 </html>
+<?php } ?>

@@ -1,3 +1,4 @@
+<?php if(!isset($_GET['contentonly'])) {?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +24,7 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="content container">
+                <div class="content container"><?php } ?>
                     <h1>About UWave Radio</h1>
                     UWave Radio is the campus-based community station of the Bothell area and
                     beyond. We are a center for community engagement, a hub for
@@ -35,6 +36,7 @@
                     <a href="http://cdbs.recnet.net/fmq.php?facid=197326">broadcast application</a>
                     in the end of 2013. If granted, will be broadcasting reaching a potential
                     of 200,000 local listeners on 104.9FM!
+                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
             </div>
         </div>
@@ -42,3 +44,4 @@
 <?php require("foot.php"); ?>
 </body>
 </html>
+<?php } ?>
