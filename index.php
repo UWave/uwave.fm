@@ -24,13 +24,15 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="inner cover"><?php } ?>
+                <span class="pagecontents"><?php } ?>
+                <div class="inner cover">
                     <p class="lead">
                         <img src="assets/img/swoosh.png"><br />
-                        <a href="/listen.php" class="btn btn-lg btn-play"><i class="glyphicon glyphicon-play-circle playpause"></i> <span class="playtext">Tune in</span></a>
+                        <a href="listen.php" class="btn btn-lg btn-play"><i class="glyphicon glyphicon-play-circle playpause"></i> <span class="playtext">Tune in</span></a>
                     </p>
-                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
+                <?php if(!isset($_GET['contentonly'])) {?>
+                </span>
             </div>
         </div>
     </div>
@@ -38,12 +40,6 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $(".btn-play").on("click", uwave.playpause);
-            $(uwave).on("play", function() {
-                $(".playtext").text("Pause");
-            });
-            $(uwave).on("pause", function() {
-                $(".playtext").text("Tune in");
-            });
         });
     </script>
   </body>

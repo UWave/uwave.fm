@@ -24,7 +24,8 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="content container"><?php } ?>
+                <span class="pagecontents"><?php } ?>
+                <div class="content container">
                     <h1>More ways to listen</h1>
                     You can listen to UWave 24/7 right here on UWave.fm by clicking the
                     <i class="glyphicon glyphicon-play-circle"></i> at the top of any page,
@@ -36,8 +37,9 @@
                     <tr><td>mp3</td><td><a href="/uwave-128.mp3.m3u"><i class="fa fa-volume-up"></i> m3u</a></td><td><a href="/uwave-128.mp3.xspf"><i class="fa fa-volume-up"></i> xspf</a></td></tr>
                     <tr><td>aac</td><td><a href="/uwave-128.m4a.m3u"><i class="fa fa-volume-up"></i> m3u</a></td><td><a href="/uwave-128.m4a.xspf"><i class="fa fa-volume-up"></i> xspf</a></td></tr>
                     </table>
-                    <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
+                <?php if(!isset($_GET['contentonly'])) {?>
+                </span>
             </div>
         </div>
     </div>

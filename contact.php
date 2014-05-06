@@ -24,8 +24,8 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
+                <span class="pagecontents"><?php } ?>
                 <div class="content container">
-                <?php } ?>
                     <h1>Contact UWave</h1>
                     If you have any questions or otherwise need to get in touch with us, the best
                     way is just to email <a href="mailto:info@uwave.fm">info@uwave.fm</a>.<br />
@@ -44,8 +44,9 @@
                             Box 358561<br />
                             Bothell, WA 98011
                         </p>
-                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
+                <?php if(!isset($_GET['contentonly'])) {?>
+                </span>
             </div>
         </div>
     </div>

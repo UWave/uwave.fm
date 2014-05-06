@@ -24,7 +24,8 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <?php require('head.php'); ?>
-                <div class="content container"><?php } ?>
+                <span class="pagecontents"><?php } ?>
+                <div class="content container">
                     <h1>Get Involved</h1>
                     There are a number of ways to get involved in UWave:
                     <ul>
@@ -47,8 +48,9 @@
                             Interested in promoting your group or event through UWave? Fill out the
                             form above and smeone will get in contact with you.
                         </ul>
-                <?php if(!isset($_GET['contentonly'])) {?>
                 </div>
+                <?php if(!isset($_GET['contentonly'])) {?>
+                </span>
             </div>
         </div>
     </div>
