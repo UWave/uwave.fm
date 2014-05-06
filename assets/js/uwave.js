@@ -61,4 +61,13 @@ $(document).ready(function() {
     $(".tunein").on("click", uwave.playpause);
     uwave.fixActiveNav();
 
+    $.getScript('https://www.uwave.fm:4444/primus/primus.js', function success(data, textStatus, jqxhr) {
+        var primus = new Primus('https://www.uwave.fm:4444');
+        primus.on('data', function incoming(data) {
+            if(data.type == "metadata") {
+                $(".metadata").text(data.text);
+            }
+        });
+    });
+
 });

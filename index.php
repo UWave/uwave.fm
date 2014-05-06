@@ -29,6 +29,7 @@
                     <p class="lead">
                         <img src="assets/img/swoosh.svg"><br />
                         <a href="listen.php" class="btn btn-lg btn-play"><i class="glyphicon glyphicon-play-circle playpause"></i> <span class="playtext">Tune in</span></a>
+                        <div class="metadata"></div>
                     </p>
                 </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
