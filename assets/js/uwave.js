@@ -16,7 +16,17 @@ $(document).ready(function() {
             $(uwave).trigger("pause");
         }
         return false;
-    }
+    };
 
-    $(".tunein").on("click", uwave.playpause)
+    $(".navlink").on("click", function(e) {
+        console.log(arguments);
+        var newurl = event.currentTarget.href;
+        $.get(newurl + "?contentonly").success(function(data) {
+            $(".content").html(data);
+            history.pushState(null, null, newurl);
+        });
+        e.preventDefault();
+    });
+
+    $(".tunein").on("click", uwave.playpause);
 });
