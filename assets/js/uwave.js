@@ -38,6 +38,8 @@ $(document).ready(function() {
         var newurl = e.currentTarget.href;
         console.log("Navigating to", newurl);
         $.get(newurl + "?contentonly").success(function(data) {
+            $(".active").removeClass("active");
+            $(e.currentTarget.offsetParent).addClass("active");
             $(".pagecontents").html(data);
             history.pushState(null, null, newurl);
             $(uwave).trigger("pageload", newurl);
