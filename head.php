@@ -7,13 +7,13 @@
                         </span>
                         <span class="col-md-4">
                             <ul class="nav masthead-nav">
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/index.php") {?> class="active"<?php } ?>><a href="." class="navlink">Home</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/about.php") {?> class="active"<?php } ?>><a href="about.php" class="navlink">About</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/getinvolved.php") {?> class="active"<?php } ?>><a href="getinvolved.php" class="navlink">Get Involved</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/contact.php") {?> class="active"<?php } ?>><a href="contact.php" class="navlink">Contact Us</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/schedule.php") {?> class="active"<?php } ?>><a href="schedule.php" class="navlink">Schedule</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/listen.php") {?> class="active"<?php } ?>><a href="listen.php" class="navlink">Listen</a></li>
-                                <li<?php if($_SERVER['SCRIPT_NAME'] == "/donate.php") {?> class="active"<?php } ?>><a href="donate.php" class="navlink">Donate</a></li>
+                                <li class="navli home"><a href="." class="navlink">Home</a></li>
+                                <li class="navli about"><a href="about.php" class="navlink">About</a></li>
+                                <li class="navli getinvolved"><a href="getinvolved.php" class="navlink">Get Involved</a></li>
+                                <li class="navli contact"><a href="contact.php" class="navlink">Contact Us</a></li>
+                                <li class="navli schedule"><a href="schedule.php" class="navlink">Schedule</a></li>
+                                <li class="navli listen"><a href="listen.php" class="navlink">Listen</a></li>
+                                <li class="navli donate"><a href="donate.php" class="navlink">Donate</a></li>
                             </ul>
                         </span>
                         <span class="col-md-4">

@@ -34,19 +34,31 @@ $(document).ready(function() {
         }
     });
 
+    uwave.fixActiveNav = function() {
+        // deactivate the old nav link
+        $(".active").removeClass("active");
+        // find the new one
+        var pagename = window.location.pathname.split(".")[0];
+        pagename = pagename.replace("/", "");
+        if(pagename == "" || pagename == "index") {
+            pagename = "home";
+        }
+        $(".navli." + pagename).addClass("active");
+    };
+
     $(".navlink").on("click", function(e) {
         var newurl = e.currentTarget.href;
         console.log("Navigating to", newurl);
         $.get(newurl + "?contentonly").success(function(data) {
-            $(".active").removeClass("active");
-            $(e.currentTarget.offsetParent).addClass("active");
             $(".pagecontents").html(data);
             history.pushState(null, null, newurl);
+            uwave.fixActiveNav();
             $(uwave).trigger("pageload", newurl);
         });
         e.preventDefault();
     });
 
     $(".tunein").on("click", uwave.playpause);
+    uwave.fixActiveNav();
 
 });
