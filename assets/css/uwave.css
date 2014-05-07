@@ -148,6 +148,10 @@ body {
     color: #cc1f2e;
 }
 
+.tunein {
+  color: #fff !important;
+}
+
 .content {
     min-height: calc(100%-60px);
     padding-top: 100px;
