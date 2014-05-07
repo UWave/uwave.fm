@@ -70,4 +70,12 @@ $(document).ready(function() {
         });
     });
 
+    $(".tunein").tooltip({title: function() {
+      if(uwave.player.paused) {
+        return "Listen to UWave";
+      } else {
+        return "Stop listening";
+      }
+    }, placement: 'bottom'})
+
 });
