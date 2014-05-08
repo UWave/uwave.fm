@@ -160,3 +160,11 @@ body {
     color: #ccc;
     text-align: left;
 }
+
+.metadata {
+  display: none;
+}
+
+.metadata small {
+  font-size: 10pt;
+}

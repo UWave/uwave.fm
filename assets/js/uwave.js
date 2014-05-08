@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    window.uwave = {};
+    window.uwave = {metadata: {}};
     uwave.player = document.getElementById("player");
     uwave.playpause = function(e) {
         if(player.paused) {
@@ -8,12 +8,14 @@ $(document).ready(function() {
                 .removeClass("glyphicon-play-circle")
                 .addClass("glyphicon-pause");
             $(uwave).trigger("play");
+            $(".metadata").show();
         } else {
             player.pause()
             $(".playpause")
                 .removeClass("glyphicon-pause")
                 .addClass("glyphicon-play-circle");
             $(uwave).trigger("pause");
+            $(".metadata").hide();
         }
         e.preventDefault();
     };
@@ -61,11 +63,16 @@ $(document).ready(function() {
     $(".tunein").on("click", uwave.playpause);
     uwave.fixActiveNav();
 
+    uwave.updateMetadata = function() {
+      $(".metadata").html(uwave.metadata.title + "<br /><small>" + uwave.metadata.album + "</small><br /><small>By " + uwave.metadata.artist + "</small>")
+    }
     $.getScript('https://www.uwave.fm:4444/primus/primus.js', function success(data, textStatus, jqxhr) {
-        var primus = new Primus('https://www.uwave.fm:4444');
-        primus.on('data', function incoming(data) {
+        uwave.primus = new Primus('https://www.uwave.fm:4444');
+        uwave.primus.on('data', function incoming(data) {
             if(data.type == "metadata") {
-                $(".metadata").text(data.text);
+              uwave.metadata = metadata;
+              uwave.updateMetadata();
+              $(uwave).trigger("metadata", data)
             }
         });
     });
@@ -78,4 +85,9 @@ $(document).ready(function() {
       }
     }, placement: 'bottom'})
 
+    //TODO: This URL should be relative when we launch
+    $.get("https://uwave.fm/listen/now-playing.json").success(function(data) {
+      uwave.metadata = data;
+      uwave.updateMetadata();
+    })
 });
