@@ -8,24 +8,29 @@ $(document).ready(function() {
                 .removeClass("glyphicon-play-circle")
                 .addClass("glyphicon-pause");
             $(uwave).trigger("play");
-            $(".metadata").show();
         } else {
             player.pause()
             $(".playpause")
                 .removeClass("glyphicon-pause")
                 .addClass("glyphicon-play-circle");
             $(uwave).trigger("pause");
-            $(".metadata").hide();
         }
         e.preventDefault();
     };
 
+    uwave.updateMetadata = function() {
+      $(".metadata").html(uwave.metadata.title + "<br /><small>" + uwave.metadata.album + "</small><br /><small>By " + uwave.metadata.artist + "</small>")
+    };
+
+
     // These functions are just for the home page
     $(uwave).on("play", function() {
         $(".playtext").text("Pause");
+        $(".metadata").show();
     });
     $(uwave).on("pause", function() {
         $(".playtext").text("Tune in");
+        $(".metadata").hide();
     });
     $(uwave).on("pageload", function() {
         if(!uwave.player.paused) {
@@ -33,6 +38,8 @@ $(document).ready(function() {
             $(".btn-play .playpause")
                 .removeClass("glyphicon-play-circle")
                 .addClass("glyphicon-pause");
+            uwave.updateMetadata();
+            $(".metadata").show();
         }
     });
 
@@ -63,9 +70,6 @@ $(document).ready(function() {
     $(".tunein").on("click", uwave.playpause);
     uwave.fixActiveNav();
 
-    uwave.updateMetadata = function() {
-      $(".metadata").html(uwave.metadata.title + "<br /><small>" + uwave.metadata.album + "</small><br /><small>By " + uwave.metadata.artist + "</small>")
-    }
     $.getScript('https://www.uwave.fm:4444/primus/primus.js', function success(data, textStatus, jqxhr) {
         uwave.primus = new Primus('https://www.uwave.fm:4444');
         uwave.primus.on('data', function incoming(data) {
