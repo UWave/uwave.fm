@@ -73,6 +73,10 @@ $(document).ready(function() {
             $(".pagecontents").html(data);
             history.pushState(null, null, newurl);
             uwave.fixActiveNav();
+            if(window.hasOwnProperty("ga")) {
+              ga('set', 'location', window.location.href);
+              ga('send', 'pageview');
+            }
             $(uwave).trigger("pageload", newurl);
         });
         e.preventDefault();
