@@ -41,6 +41,7 @@ $(document).ready(function() {
             uwave.updateMetadata();
             $(".metadata").show();
         }
+        $(".btn-play").on("click", uwave.playpause);
     });
 
     uwave.fixActiveNav = function() {
