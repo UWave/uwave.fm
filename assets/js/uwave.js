@@ -7,12 +7,14 @@ $(document).ready(function() {
             $(".playpause")
                 .removeClass("glyphicon-play-circle")
                 .addClass("glyphicon-pause");
+            $(".tunein").addClass("pause");
             $(uwave).trigger("play");
         } else {
             player.pause()
             $(".playpause")
                 .removeClass("glyphicon-pause")
                 .addClass("glyphicon-play-circle");
+            $(".tunein").removeClass("pause");
             $(uwave).trigger("pause");
         }
         e.preventDefault();
