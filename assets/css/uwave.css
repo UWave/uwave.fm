@@ -142,10 +142,12 @@ body {
 /*
  * Red things. Lots of red things
  */
-.red {
+.red,
+.red:hover,
+.red:active,
+.red:visited {
     color: #cc1f2e;
 }
-
 
 .content {
     min-height: calc(100%-60px);
