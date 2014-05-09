@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $.getScript("assets/js/bugsense.min.js", function() {
+      Bugsense.initAndStartSession({ apiKey: '9e74c309' });
+    });
     window.uwave = {metadata: {}};
     uwave.player = document.getElementById("player");
     uwave.playpause = function(e) {
