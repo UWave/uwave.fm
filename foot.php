@@ -8,3 +8,4 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/uwave.js" type="text/javascript"></script>
+    <script src="//www.washington.edu/static/alert.js" type="text/javascript"></script>

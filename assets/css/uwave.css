@@ -168,3 +168,9 @@ body {
 .metadata small {
   font-size: 10pt;
 }
+
+#uwalert-alert-message {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
