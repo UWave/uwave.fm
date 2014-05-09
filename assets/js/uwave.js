@@ -29,7 +29,17 @@ $(document).ready(function() {
     };
 
     uwave.updateMetadata = function() {
-      $(".metadata").html(uwave.metadata.title + "<br /><small>" + uwave.metadata.album + "</small><br /><small>By " + uwave.metadata.artist + "</small>")
+      var metadata = ""
+      if(uwave.metadata.title != "") {
+        metadata += uwave.metadata.title + "<br />";
+      }
+      if(uwave.metadata.album != "") {
+        metadata += "<small>" + uwave.metadata.album + "</small><br />";
+      }
+      if(uwave.metadata.artist != "") {
+        metadata += "<small>By " + uwave.metadata.artist + "</small>";
+      }
+      $(".metadata").html(metadata);
     };
 
 
