@@ -74,7 +74,7 @@ $(document).ready(function() {
         uwave.primus = new Primus('https://www.uwave.fm:4444');
         uwave.primus.on('data', function incoming(data) {
             if(data.type == "metadata") {
-              uwave.metadata = metadata;
+              uwave.metadata = data;
               uwave.updateMetadata();
               $(uwave).trigger("metadata", data)
             }
