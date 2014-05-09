@@ -42,6 +42,7 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+  margin: 0 auto -30px;
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -50,11 +51,6 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
 }
 
 
@@ -127,6 +123,7 @@ body {
     top: 0;
   }
   .mastfoot {
+    height: 30px;
     bottom: 0;
   }
   /* Start the vertical centering */
