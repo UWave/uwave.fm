@@ -8,7 +8,9 @@ $(document).ready(function() {
       metadata: {},
       primus: null
     };
+
     uwave.player = document.getElementById("player");
+
     uwave.playpause = function(e) {
         if(player.paused) {
             player.play();
@@ -44,14 +46,18 @@ $(document).ready(function() {
 
 
     // These functions are just for the home page
-    $(uwave).on("play", function() {
+    $(uwave.player).on("playing", function() {
         $(".playtext").text("Pause");
         $(".metadata").show();
     });
-    $(uwave).on("pause", function() {
+    $(uwave.player).on("pause", function() {
         $(".playtext").text("Tune in");
         $(".metadata").hide();
     });
+    $(uwave.player).on("play", function() {
+      $(".playtext").text("Erry day i'm bufferin...")
+    });
+
     $(uwave).on("pageload", function() {
         if(!uwave.player.paused) {
             $(".playtext").text("Pause");
