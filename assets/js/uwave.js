@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $.getScript("assets/js/bugsense.min.js", function() {
-      Bugsense.initAndStartSession({ apiKey: '9e74c309' });
+      if(window.hostname != "127.0.0.1") {
+        Bugsense.initAndStartSession({ apiKey: '9e74c309' });
+      }
     });
     window.uwave = {
       metadata: {},
