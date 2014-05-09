@@ -2,7 +2,10 @@ $(document).ready(function() {
     $.getScript("assets/js/bugsense.min.js", function() {
       Bugsense.initAndStartSession({ apiKey: '9e74c309' });
     });
-    window.uwave = {metadata: {}};
+    window.uwave = {
+      metadata: {},
+      primus: null
+    };
     uwave.player = document.getElementById("player");
     uwave.playpause = function(e) {
         if(player.paused) {
@@ -99,5 +102,5 @@ $(document).ready(function() {
     $.get("https://uwave.fm/listen/now-playing.json").success(function(data) {
       uwave.metadata = data;
       uwave.updateMetadata();
-    })
+    });
 });
