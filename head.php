@@ -21,7 +21,7 @@
                                 <li><a href="https://twitter.com/UWaveRadio" target = "_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://facebook.com/UWaveRadio" target = "_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave" target = "_blank"><i class="fa fa-github"></i></a></li>
-                                <li><a href="/listen.php" class="tunein"><i class="glyphicon glyphicon-play-circle playpause"></i></a></li>
+                                <li><a href="/listen.php" class="tunein topbutton"><i class="glyphicon glyphicon-play-circle playpause"></i></a></li>
                             </ul>
                         </span>
                     </div>
