@@ -26,10 +26,11 @@
                 <?php require('head.php'); ?>
                 <span class="pagecontents"><?php } ?>
                 <div class="content container">
-                    <h1>More ways to listen</h1>
+                    <h2>Listen right here</h2>
                     You can listen to UWave 24/7 right here on UWave.fm by clicking the
-                    <i class="glyphicon glyphicon-play-circle"></i> at the top of any page,
-                    or with an external player using these files:
+                    <i class="glyphicon glyphicon-play-circle"></i> at the top of any page.<br />
+                    <h2>Listen in an external player</h2>
+                    If you'd prefer to listen in an external player, such as VLC, use one of these:
 
 
                     <table class="table table-condensed">
