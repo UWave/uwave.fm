@@ -29,6 +29,19 @@
                     <h2>Listen right here</h2>
                     You can listen to UWave 24/7 right here on UWave.fm by clicking the
                     <i class="glyphicon glyphicon-play-circle"></i> at the top of any page.<br />
+
+                    <noscript>
+                      <b>Since you've disabled javascript, that likely won't work though.
+                      That's okay, you should still be able to use this player, or one of the
+                      links below</b>:<br />
+
+                      <center>
+                        <audio id="nojsPlayer" preload="none" controls>
+                          <source src="http://live.uwave.fm:8000/listen-128.ogg" type="audio/ogg">
+                          <source src="http://live.uwave.fm:8000/listen-128.mp3" type="audio/mp3">
+                        </audio>
+                      </center>
+                    </noscript>
                     <h2>Listen in an external player</h2>
                     If you'd prefer to listen in an external player, such as VLC, use one of these:
 
