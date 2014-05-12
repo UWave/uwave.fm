@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $.getScript("assets/js/bugsense.min.js", function() {
-      if(window.hostname != "127.0.0.1") {
+      if(window.location.hostname != "127.0.0.1" &&
+         window.location.hostname != "localhost") {
         Bugsense.initAndStartSession({ apiKey: '9e74c309' });
       }
     });
