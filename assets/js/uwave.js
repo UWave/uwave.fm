@@ -7,7 +7,12 @@ $(document).ready(function() {
     });
     window.uwave = {
       metadata: {},
-      primus: null
+      primus: null,
+      cast: null,
+      streams: {
+        ogg: "http://live.uwave.fm:8000/listen-128.ogg",
+        mp3: "http://live.uwave.fm:8000/listen-128.mp3"
+      }
     };
 
     uwave.player = document.getElementById("player");

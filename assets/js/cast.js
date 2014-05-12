@@ -22,6 +22,7 @@ $(document).ready(function() {
   }
 
   initializeCastApi = function() {
+    uwave.cast = {};
     var applicationID = chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
     var sessionRequest = new chrome.cast.SessionRequest(applicationID);
     var apiConfig = new chrome.cast.ApiConfig(sessionRequest,
@@ -37,4 +38,37 @@ $(document).ready(function() {
       console.log(errorInfo);
     }
   }
+  function castLaunchError() {
+    console.log("Failed to launch session", arguments);
+  }
+  function castRequestSessionSuccess(e) {
+    console.log("Got a session!", e);
+    uwave.cast.session = e;
+    $("#castIcon img").attr('src', 'assets/img/cast_icon_active.png');
+    /*
+    uwave.cast.session.addUpdateListener(sessionUpdateListener.bind(this));
+    if (session.media.length != 0) {
+      onMediaDiscovered('onRequestSession', session.media[0]);
+    }
+    uwave.cast.session.addMediaListener(
+      onMediaDiscovered.bind(this, 'addMediaListener'));
+    uwave.cast.session.addUpdateListener(sessionUpdateListener.bind(this));
+    */
+    loadStream();
+  }
+
+  function loadStream() {
+    console.log("Loading Stream!")
+    uwave.cast.mediaInfo = new chrome.cast.media.MediaInfo(uwave.streams.ogg);
+    uwave.cast.request = new chrme.cast.media.LoadRequest(uwave.cast.mediaInfo);
+    uwave.cast.request.autoplay = false;
+    uwave.cast.session.loadMedia(uwave.cast.request,
+      castMediaDiscovered.bind(this, 'loadMedia'),
+      castMediaerror
+    )
+  }
+
+  $("#castIcon").on('click', function() {
+    chrome.cast.requestSession(castRequestSessionSuccess, castLaunchError);
+  })
 });

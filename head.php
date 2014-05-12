@@ -23,7 +23,7 @@
                                 <li><a href="https://github.com/UWave" target = "_blank"><i class="fa fa-github"></i></a></li>
                             </ul>
                             <a href="/listen.php" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
-                            <a href="javascript: void(0);" class="chromecast"><img src="assets/img/casticon.on.png" /></a>
+                            <a href="#" class="chromecast" id="castIcon"><img src="assets/img/casticon.on.png" /></a>
                         </span>
                     </div>
                 </div>
