@@ -129,19 +129,19 @@ $(document).ready(function() {
 
     if(window.hasOwnProperty("ga")) {
       $(uwave.player).on("play", function() {
-        ga('_trackEvent', 'tunein', 'play')
+        ga('send', 'event', 'tunein', 'play');
       });
       $(uwave.player).on("error", function() {
-        ga('_trackEvent', 'tunein', 'error')
+        ga('send', 'event', 'tunein', 'error');
       });
       $(uwave.player).on("pause", function() {
-        ga('_trackEvent', 'tunein', 'pause')
+        ga('send', 'event', 'tunein', 'pause');
       });
       $(uwave.player).on("playing", function() {
-        ga('_trackEvent', 'tunein', 'playing')
+        ga('send', 'event', 'tunein', 'playing');
       });
       $(uwave.player).on("stalled", function() {
-        ga('_trackEvent', 'tunein', 'stalled')
+        ga('send', 'event', 'tunein', 'stalled');
       });
     }
 });
