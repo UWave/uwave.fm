@@ -126,4 +126,22 @@ $(document).ready(function() {
       uwave.metadata = data;
       uwave.updateMetadata();
     });
+
+    if(window.hasOwnProperty("ga")) {
+      $(uwave.player).on("play", function() {
+        ga('_trackEvent', 'tunein', 'play')
+      });
+      $(uwave.player).on("error", function() {
+        ga('_trackEvent', 'tunein', 'error')
+      });
+      $(uwave.player).on("pause", function() {
+        ga('_trackEvent', 'tunein', 'pause')
+      });
+      $(uwave.player).on("playing", function() {
+        ga('_trackEvent', 'tunein', 'playing')
+      });
+      $(uwave.player).on("stalled", function() {
+        ga('_trackEvent', 'tunein', 'stalled')
+      });
+    }
 });
