@@ -175,3 +175,9 @@ body {
 .tunein.topbutton {
   font-size: 45pt;
 }
+
+.externalplayer {
+  font-size: 8pt;
+  color: #999;
+  color: rgba(255,255,255,.5);
+}

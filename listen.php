@@ -26,14 +26,10 @@
                 <?php require('head.php'); ?>
                 <span class="pagecontents"><?php } ?>
                 <div class="content container">
-                    <h2>Listen right here</h2>
-                    You can listen to UWave 24/7 right here on UWave.fm by clicking the
-                    <i class="glyphicon glyphicon-play-circle"></i> at the top of any page.<br />
 
                     <noscript>
-                      <b>Since you've disabled javascript, that likely won't work though.
-                      That's okay, you should still be able to use this player, or one of the
-                      links below</b>:<br />
+                      Since you've got JavaScript disabled, you'll need to use
+                      this player (or an external one) to listen:<br /><br />
 
                       <center>
                         <audio id="nojsPlayer" preload="none" controls>

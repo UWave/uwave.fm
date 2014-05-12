@@ -31,6 +31,7 @@
                           <img src="assets/img/swoosh.png"><br />
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
                         </a><br />
+                        <a href="/listen.php" class="navlink externalplayer">External Player</a><br />
                         <span class="metadata"></div>
                     </p>
                 </div>

@@ -5,6 +5,7 @@ $(document).ready(function() {
          Bugsense.initAndStartSession({ apiKey: '9e74c309' });
        });
     }
+    $(".navli.listen").hide();
     window.uwave = {
       metadata: {},
       primus: null
