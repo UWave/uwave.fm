@@ -32,7 +32,7 @@
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
                         </a><br />
                         <a href="/listen.php" class="navlink externalplayer">External Player</a><br />
-                        <span class="metadata"></div>
+                        <span class="metadata"></span>
                     </p>
                 </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
