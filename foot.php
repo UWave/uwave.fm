@@ -9,3 +9,4 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/uwave.js" type="text/javascript"></script>
     <script src="//www.washington.edu/static/alert.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
