@@ -175,3 +175,7 @@ body {
 .tunein.topbutton {
   font-size: 45pt;
 }
+
+.chromecast {
+  display: none;
+}

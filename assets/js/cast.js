@@ -1,11 +1,15 @@
 $(document).ready(function() {
   function receiverListener(e) {
+    console.log("ReceiverListener", e);
     if( e === chrome.cast.ReceiverAvailability.AVAILABLE) {
-      $(".rightmenu").append($("<img>").attr('src', 'assets/img/casticon.on.png'))
+      $(".chromecast").show();
+    } else if(e === chrome.cast.ReceiverAvailability.UNAVAILABLE) {
+      $(".chromecast").hide();
     }
   }
 
   function sessionListener() {
+    console.log('New session ID: ', e.sessionId);
     console.log("Session Listener args:", arguments);
   }
 
@@ -17,21 +21,20 @@ $(document).ready(function() {
     console.log("Cast init error:", arguments);
   }
 
-  function initializeCastApi() {
-    var sessionRequest = new chrome.cast.SessionRequest(chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID);
+  initializeCastApi = function() {
+    var applicationID = chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
+    var sessionRequest = new chrome.cast.SessionRequest(applicationID);
     var apiConfig = new chrome.cast.ApiConfig(sessionRequest,
       sessionListener,
       receiverListener);
     chrome.cast.initialize(apiConfig, castInitSuccess, castInitError);
   }
 
-  function checkCast() {
-    if(chrome.cast || chrome.cast.isAvailable) {
+  window['__onGCastApiAvailable'] = function(loaded, errorInfo) {
+    if (loaded) {
       initializeCastApi();
     } else {
-      setTimeout(checkCast, 1000);
+      console.log(errorInfo);
     }
   }
-
-  checkCast();
 });

@@ -16,13 +16,14 @@
                                 <li class="navli donate"><a href="donate.php" class="navlink">Donate</a></li>
                             </ul>
                         </span>
-                        <span class="col-md-4 rightmenu">
+                        <span class="col-md-4">
                             <ul class="nav masthead-nav">
                                 <li><a href="https://twitter.com/UWaveRadio" target = "_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://facebook.com/UWaveRadio" target = "_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave" target = "_blank"><i class="fa fa-github"></i></a></li>
                             </ul>
                             <a href="/listen.php" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
+                            <a href="javascript: void(0);" class="chromecast"><img src="assets/img/casticon.on.png" /></a>
                         </span>
                     </div>
                 </div>
