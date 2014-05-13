@@ -27,19 +27,20 @@
                 <span class="pagecontents"><?php } ?>
                 <div class="content container">
                     <h1>Donate</h1>
-                    We accept donations through our gift account with the UW.
-                    <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=UWAVEB">Click here to donate to UWave Radio</a>.
+                    We accept donations through our gift account with the UW.<br /><br /><br />
+                    <h2><center><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=UWAVEB">Click here to donate to UWave Radio</a>.</h2></center>
+                    <br /><br /><br />
 
-                    <h2>UWave Radio gift account FAQ</h2>
-                    <ol>
-                        <li>How much can I donate?
+                    <h3>Donation FAQs</h3>
+                    <ol id="donationFAQs">
+                        <li><b class="red">How much can I donate?</b><br />
                         Donors must give a minimum of $10; that is the only restriction.
                         There is no maximum amount that you can donate; the more the merrier!
                         Those who wish to donate amounts larger than $1,000, please contact
                         <a href="mailto:business@uwave.fm">business@uwave.fm</a> to clear with our
                         Business department first.</li>
 
-                        <li>Do I have to donate online?
+                        <li><b class="red">Do I have to donate online?</b><br />
                         No. You can also donate with a check or cash by mail to:<br />
                         <address>
                             Box 358528
@@ -51,7 +52,7 @@
                         take some time for you to receive acknowledgment for a check or cash contribution.</li>
 
                         <a href="assets/img/check.jpg" target="_BLANK"><img src="assets/img/check.jpg" width="40%"/></a>
-                        <li>What is the money used for?
+                        <li><b class="red">What is the money used for?</b><br />
                         As a growing community radio station, UWave Radio accumulates a big bill. We
                         want to have as much saved in emergency funds as we can so we can continue to
                         provide quality radio to our listeners. The money earned in the gift account
@@ -63,12 +64,13 @@
                         is). The money we receive during that fund drive will go only to the purchase(s)
                         we announced.</li>
 
-                        <li>What’s in it for me?
+                        <li><b class="red">What’s in it for me?</b><br />
                         By supporting UWave Radio, you are helping us provide quality on-air programming
                         to the community. The more supporters we have, the better we are able to fund and
                         accomplish our goals as an organization.</li>
                     </ol>
-                    UWave Radio’s mission statement:<br />
+                    <br /><br />
+                    <b class="red">UWave Radio’s mission statement</b><br />
                     “UWave Radio is the campus-based community station of the Bothell area and beyond. We are a center for community engagement, a hub for underrepresented voices and music, an environment for professional development, and a catalyst for social justice.”
                     For more information on UWave Radio, please visit our <a href="about">about</a> page.
 
