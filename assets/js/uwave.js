@@ -85,7 +85,6 @@ $(document).ready(function() {
     };
 
     function navigateTo(newurl) {
-      console.log("Navigating to", newurl);
       $.get(newurl + "?contentonly").success(function(data) {
           $(".pagecontents").html(data);
           history.pushState(null, null, newurl);
