@@ -47,8 +47,8 @@
                             118115 Campus Way NE, UW1, Suite 281<br />
                             Bothell WA 98011-8246<br />
                         </address>
-                        For check donations, please pay to the order of the University of Waishington.
-                        On the memo line, write “UWave Radio” as shown below. Please note that it may
+                        For check donations, please pay to the order of the University of Washington.
+                        On the memo line, write "UWave Radio" as shown below. Please note that it may
                         take some time for you to receive acknowledgment for a check or cash contribution.</li>
 
                         <center>
@@ -69,17 +69,17 @@
                         is). The money we receive during that fund drive will go only to the purchase(s)
                         we announced.</li>
 
-                        <li><b class="red">What’s in it for me?</b><br />
+                        <li><b class="red">What's in it for me?</b><br />
                         By supporting UWave Radio, you are helping us provide quality on-air programming
                         to the community. The more supporters we have, the better we are able to fund and
                         accomplish our goals as an organization.</li>
                     </ol>
                     <br /><br />
-                    <b class="red">UWave Radio’s mission statement</b><br />
-                    “UWave Radio is the campus-based community station of the Bothell area and beyond. We are a center for community engagement, a hub for underrepresented voices and music, an environment for professional development, and a catalyst for social justice.”
+                    <b class="red">UWave Radio's mission statement</b><br />
+                    "UWave Radio is the campus-based community station of the Bothell area and beyond. We are a center for community engagement, a hub for underrepresented voices and music, an environment for professional development, and a catalyst for social justice."
                     For more information on UWave Radio, please visit our <a href="about">about</a> page.
 
-                    Thank you for supporting UWave Radio, UWB’s student-run community radio station!
+                    Thank you for supporting UWave Radio, UWBs student-run community radio station!
                 </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
                 </span>
