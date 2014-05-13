@@ -84,7 +84,7 @@ $(document).ready(function() {
         $(".navli." + pagename).addClass("active");
     };
 
-    function navigateTo(newurl) {
+    uwave.navigateTo = function(newurl) {
       $.get(newurl + "?contentonly").success(function(data) {
           $(".pagecontents").html(data);
           history.pushState(null, null, newurl);
@@ -98,12 +98,12 @@ $(document).ready(function() {
     }
 
     $(".navlink").on("click", function(e) {
-        navigateTo(e.currentTarget.href);
+        uwave.navigateTo(e.currentTarget.href);
         e.preventDefault();
     });
 
     $(window).on('popstate', function(e) {
-      navigateTo(document.location.href);
+      uwave.navigateTo(document.location.href);
     });
 
     $(".tunein").on("click", uwave.playpause);
