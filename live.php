@@ -27,7 +27,7 @@
                 <span class="pagecontents"><?php } ?>
                 <div class="inner cover">
                     <p class="lead">
-                        <a href="listen.php" class="btn btn-lg btn-play">
+                        <a href="/listen" class="btn btn-lg btn-play">
                           <img src="assets/img/swoosh.png"><br />
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
                         </a><br />
