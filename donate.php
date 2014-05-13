@@ -41,17 +41,22 @@
                         Business department first.</li>
 
                         <li><b class="red">Do I have to donate online?</b><br />
-                        No. You can also donate with a check or cash by mail to:<br />
+                        No. You can also donate with a check or cash by mail to:<br /><br />
                         <address>
-                            Box 358528
-                            118115 Campus Way NE, UW1, Suite 281
-                            Bothell WA 98011-8246
+                            Box 358528<br />
+                            118115 Campus Way NE, UW1, Suite 281<br />
+                            Bothell WA 98011-8246<br />
                         </address>
                         For check donations, please pay to the order of the University of Waishington.
                         On the memo line, write “UWave Radio” as shown below. Please note that it may
                         take some time for you to receive acknowledgment for a check or cash contribution.</li>
 
-                        <a href="assets/img/check.jpg" target="_BLANK"><img src="assets/img/check.jpg" width="40%"/></a>
+                        <center>
+                          <a href="assets/img/check.jpg" target="_BLANK">
+                            <img src="assets/img/check.jpg" width="20%"/>
+                          </a>
+                        </center>
+
                         <li><b class="red">What is the money used for?</b><br />
                         As a growing community radio station, UWave Radio accumulates a big bill. We
                         want to have as much saved in emergency funds as we can so we can continue to

@@ -184,3 +184,8 @@ body {
 #donationFAQs li {
   margin: 20px;
 }
+
+address {
+  font-family: serif;
+  text-shadow: none;
+}
