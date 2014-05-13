@@ -53,7 +53,7 @@
 
                         <center>
                           <a href="assets/img/check.jpg" target="_BLANK">
-                            <img src="assets/img/check.jpg" width="20%"/>
+                            <img src="assets/img/check.jpg" width="40%"/>
                           </a>
                         </center>
 
