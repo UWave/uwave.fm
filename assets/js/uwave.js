@@ -70,6 +70,10 @@ $(document).ready(function() {
             $(".metadata").show();
         }
         $(".btn-play").on("click", uwave.playpause);
+        $(".pagecontents .navlink").on("click", function(e) {
+            uwave.navigateTo(e.currentTarget.href);
+            e.preventDefault();
+        });
     });
 
     uwave.fixActiveNav = function() {
