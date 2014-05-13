@@ -2,7 +2,7 @@
                     <div class="inner">
                         <span class="col-md-3">
                             <ul class="nav masthead-nav">
-                                <li><a href="." class="navlink"><img src="assets/img/uwave.png" /></a></li>
+                                <li><a href="." class="navlink"><img src="assets/img/uwave.png" alt="UWave" /></a></li>
                             </ul>
                         </span>
                         <span class="col-md-6">

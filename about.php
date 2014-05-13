@@ -32,7 +32,7 @@
                     underrepresented voices and music, an environment for professional
                     development, and a catalyst for social justice.<br /><br />
 
-                    <h3>Broadcast Application Goal</h3>
+                    <b class="red">Broadcast Application Goal</b>
                     We applied for the FCC's LPFM (Low Power FM)
                     <a href="http://cdbs.recnet.net/fmq.php?facid=197326">broadcast application</a>
                     in the end of 2013. If granted, will be broadcasting reaching a potential
