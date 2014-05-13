@@ -150,7 +150,7 @@ body {
 
 .content {
     min-height: calc(100%-60px);
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 100px;
     height: 100%;
     color: #ccc;
