@@ -7,6 +7,7 @@ a,
 a:focus,
 a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 /* Custom default button */
@@ -75,6 +76,7 @@ body {
   font-weight: bold;
   color: #cc1f2e;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
@@ -138,8 +140,11 @@ body {
   }
 }
 
+.btn {
+  text-decoration: none;
+}
 /*
- * Red things. Lots of red things
+ * UWave Things
  */
 .red,
 .red:hover,
@@ -188,4 +193,12 @@ body {
 address {
   font-family: serif;
   text-shadow: none;
+}
+
+.btn-red,
+.btn-red:hover,
+.btn-red:active {
+  color: #ddd;
+  background-color: #aa1f2e;
+  border-color: #aa1f2e;
 }

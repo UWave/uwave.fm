@@ -28,7 +28,11 @@
                 <div class="content container">
                     <h1>Donate</h1>
                     We accept donations through our gift account with the UW.<br /><br /><br />
-                    <h2><center><a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=UWAVEB">Click here to donate to UWave Radio</a>.</h2></center>
+                    <h2>
+                      <center>
+                        <a href="https://www.washington.edu/giving/make-a-gift/?page=funds&source_typ=3&source=UWAVEB" class="btn btn-lg btn-red">Click here to donate to UWave Radio</a>
+                      </h2>
+                    </center>
                     <br /><br /><br />
 
                     <h3>Donation FAQs</h3>
