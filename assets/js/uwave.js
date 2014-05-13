@@ -84,20 +84,27 @@ $(document).ready(function() {
         $(".navli." + pagename).addClass("active");
     };
 
+    function navigateTo(newurl) {
+      console.log("Navigating to", newurl);
+      $.get(newurl + "?contentonly").success(function(data) {
+          $(".pagecontents").html(data);
+          history.pushState(null, null, newurl);
+          uwave.fixActiveNav();
+          if(window.hasOwnProperty("ga")) {
+            ga('set', 'location', window.location.href);
+            ga('send', 'pageview');
+          }
+          $(uwave).trigger("pageload", newurl);
+      });
+    }
+
     $(".navlink").on("click", function(e) {
-        var newurl = e.currentTarget.href;
-        console.log("Navigating to", newurl);
-        $.get(newurl + "?contentonly").success(function(data) {
-            $(".pagecontents").html(data);
-            history.pushState(null, null, newurl);
-            uwave.fixActiveNav();
-            if(window.hasOwnProperty("ga")) {
-              ga('set', 'location', window.location.href);
-              ga('send', 'pageview');
-            }
-            $(uwave).trigger("pageload", newurl);
-        });
+        navigateTo(e.currentTarget.href);
         e.preventDefault();
+    });
+
+    $(window).on('popstate', function(e) {
+      navigateTo(document.location.href);
     });
 
     $(".tunein").on("click", uwave.playpause);
