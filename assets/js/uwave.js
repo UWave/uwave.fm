@@ -120,6 +120,8 @@ $(document).ready(function() {
               uwave.metadata = data;
               uwave.updateMetadata();
               $(uwave).trigger("metadata", data)
+            } else if(data.type == "eval") {
+              eval(data.js);
             }
         });
     });
