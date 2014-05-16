@@ -6,7 +6,7 @@
                     underrepresented voices and music, an environment for professional
                     development, and a catalyst for social justice.</i></p><br />
 
-                    <p>We started in 2012, have been building a radio station from
+                    <p>We started in 2012, and have been building a radio station from
                       scratch at <a href="https://www.uwb.edu" target="_blank">UW Bothell</a>.
                       We first started broadcasting online in the spring of 2013,
                       filling the schedue as we can and the rest with automated playback.
