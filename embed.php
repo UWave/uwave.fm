@@ -8,8 +8,8 @@
   </head>
   <body>
     <audio id="player" preload="none">
-        <source src="http://live.uwave.fm:8000/listen-128.ogg" type="audio/ogg">
-        <source src="http://live.uwave.fm:8000/listen-128.mp3" type="audio/mp3">
+        <source src="/listen/128.ogg" type="audio/ogg">
+        <source src="/listen/128.mp3" type="audio/mp3">
     </audio>
     <a href="/listen" class="btn btn-lg btn-play">
       <img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br />

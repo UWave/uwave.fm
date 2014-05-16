@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <audio id="player" preload="none">
-                    <source src="http://live.uwave.fm:8000/listen-128.ogg" type="audio/ogg">
-                    <source src="http://live.uwave.fm:8000/listen-128.mp3" type="audio/mp3">
+                    <source src="/listen/128.ogg" type="audio/ogg">
+                    <source src="/listen/128.mp3" type="audio/mp3">
                 </audio>
                 <span class="pagecontents"><?php } ?>
