@@ -1,5 +1,4 @@
 <?php require('head.php'); ?>
-                <span class="pagecontents"><?php } ?>
                 <div class="content container">
                     <h1>About Us</h1>
                     <p><i>UWave Radio is the campus-based community station of the Bothell area and

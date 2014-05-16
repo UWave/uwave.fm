@@ -1,5 +1,4 @@
 <?php require('head.php'); ?>
-                <span class="pagecontents"><?php } ?>
                 <div class="content container">
                     <h1>Contact UWave</h1>
                     If you have any questions or otherwise need to get in touch with us, the best

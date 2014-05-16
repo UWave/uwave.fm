@@ -1,5 +1,4 @@
 <?php require('head.php'); ?>
-                <span class="pagecontents"><?php } ?>
                 <div class="inner cover">
                     <p class="lead">
                         <a href="/listen" class="btn btn-lg btn-play">
