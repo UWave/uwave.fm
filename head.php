@@ -12,6 +12,21 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link href="assets/css/uwave.css" rel="stylesheet">
 
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@UWaveRadio">
+    <meta name="twitter:title" content="UWave Radio">
+    <meta name="twitter:description" content="UWave Radio is the campus radio station for the University of Washington | Bothell.">
+    <meta name="twitter:image" content="https://uwave.fm/assets/img/logo.png">
+    <meta name="twitter:player" content="https://uwave.fm/embed">
+
+    <meta name="twitter:player:width" content="480">
+    <meta name="twitter:player:height" content="480">
+    <meta name="twitter:player:stream" content="https://uwave.fm/listen/128.ogg">
+    <meta name="twitter:player:stream:content_type" content="audio/ogg">
+
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
