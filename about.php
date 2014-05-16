@@ -1,37 +1,45 @@
 <?php require('head.php'); ?>
                 <div class="content container">
-                    <h1>About Us</h1>
-                    <p><i>UWave Radio is the campus-based community station of the Bothell area and
-                    beyond. We are a center for community engagement, a hub for
-                    underrepresented voices and music, an environment for professional
-                    development, and a catalyst for social justice.</i></p><br />
+                  <h1>About Us</h1>
+                  <p><i>UWave Radio is the campus-based community station of the Bothell area and
+                  beyond. We are a center for community engagement, a hub for
+                  underrepresented voices and music, an environment for professional
+                  development, and a catalyst for social justice.</i></p><br />
 
-                    <p>We started in 2012, and have been building a radio station from
-                      scratch at <a href="https://www.uwb.edu" target="_blank">UW Bothell</a>.
-                      We first started broadcasting online in the spring of 2013,
-                      filling the schedue as we can and the rest with automated playback.
-                      We applied for the FCC's LPFM (Low Power FM)
-                      <a href="http://cdbs.recnet.net/fmq.php?facid=197326">broadcast application</a>
-                      in the end of 2013. If granted, will be broadcasting an FM
-                      signal for the campus and beyond.</p>
+                  <p>We started in 2012, and have been building a radio station from
+                    scratch at <a href="https://www.uwb.edu" target="_blank">UW Bothell</a>.
+                    We first started broadcasting online in the spring of 2013,
+                    filling the schedue as we can and the rest with automated playback.
+                    We applied for the FCC's LPFM (Low Power FM)
+                    <a href="http://cdbs.recnet.net/fmq.php?facid=197326">broadcast application</a>
+                    in the end of 2013. If granted, will be broadcasting an FM
+                    signal for the campus and beyond.</p>
 
-                    <p>Our organization is broken into four departments, who handle
-                      the key pieces of the station with the help of two directors
-                      who tie everything together and ensure that everything gets
-                      where it needs to be. The departments are as follows:</p>
+                  <p>Our organization is broken into four departments, who handle
+                    the key pieces of the station with the help of two directors
+                    who tie everything together and ensure that everything gets
+                    where it needs to be. The departments are as follows:</p>
 
-                      <ul>
-                        <li><b class="red">Business</b> handles everything businessy.
-                        Legal paperwork, funding sources, etc.</li>
-                        <li><b class="red">Programming</b> handles what's on the
-                          air. They organize shows, curate the music library.</li>
-                        <li><b class="red">Promotions</b> tells people about UWave.
-                          They coordinate our message, do outreach and work with
-                          other groups on and offcampus to hold events.</li>
-                        <li><b class="red">Technology</b> runs the computers, website
-                          and audio equipment, including the studio and servers.</li>
-                      </ul>
-                </div>
+                    <ul>
+                      <li><b class="red">Business</b> handles everything businessy.
+                      Legal paperwork, funding sources, etc.</li>
+                      <li><b class="red">Programming</b> handles what's on the
+                        air. They organize shows, curate the music library.</li>
+                      <li><b class="red">Promotions</b> tells people about UWave.
+                        They coordinate our message, do outreach and work with
+                        other groups on and offcampus to hold events.</li>
+                      <li><b class="red">Technology</b> runs the computers, website
+                        and audio equipment, including the studio and servers.</li>
+                    </ul>
+
+                    <h2>Other Student Publications <small>(AKA our BFFs)</small></h2>
+                    We are one of four stuent publications on campus:
+                    <ul>
+                      <li><b><a href="http://www.huskyherald.com/" target="_blank" class="red">Husky Herald</a></b>, the UW Bothell student newspaper.</li>
+                      <li><b><a href="http://uwbpolicyjournal.com/" target="_blank" class="red">UWB Policy Journal</a></b>, is a compilation of policy-related work submitted and published by students of the University of Washington Bothell.</li>
+                      <li><b><a href="http://clamor-journal.com/" target="_blank" class="red">Clamor</a></b>, is the literary and arts journal at UWB.</li>
+                    </ul>
+                  </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
                 </span>
             </div>
