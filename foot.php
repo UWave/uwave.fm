@@ -1,7 +1,7 @@
     <div class="mastfoot">
         <div class="inner">
             <noscript><b class="red">This site works best with Javascript enabled</b></noscript>
-            <p>This site copyright &copy; 2014 UWave Radio. Some rights reserved. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/">CC BY NC SA</a>. What we play may be licensed differently.</p>
+            <p>This site copyright &copy; 2014 UWave Radio. Some rights reserved. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">CC BY NC SA</a>. What we play may be licensed differently.</p>
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
