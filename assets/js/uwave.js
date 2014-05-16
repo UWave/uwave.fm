@@ -130,7 +130,17 @@ $(document).ready(function() {
       if(uwave.player.paused) {
         return "Listen to UWave";
       } else {
-        return "Stop listening";
+        var metadata = ""
+        if(uwave.metadata.title != "") {
+          metadata += uwave.metadata.title + "/";
+        }
+        if(uwave.metadata.album != "") {
+          metadata += uwave.metadata.album + "/";
+        }
+        if(uwave.metadata.artist != "") {
+          metadata += uwave.metadata.artist;
+        }
+        return metadata;
       }
     }, placement: 'bottom'})
 
