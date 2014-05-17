@@ -21,7 +21,7 @@
     <meta name="twitter:player" content="https://uwave.fm/embed">
 
     <meta name="twitter:player:width" content="480">
-    <meta name="twitter:player:height" content="480">
+    <meta name="twitter:player:height" content="300">
     <meta name="twitter:player:stream" content="https://uwave.fm/listen/128.ogg">
     <meta name="twitter:player:stream:content_type" content="audio/ogg">
 
