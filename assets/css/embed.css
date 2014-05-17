@@ -5,7 +5,6 @@
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #ffffff;
@@ -19,7 +18,7 @@ body {
 .btn:hover,
 .btn:visited,
 .btn:active {
-  color: #ffffff;
+  color: #cc1f2e;
 }
 
 .red,
@@ -33,6 +32,7 @@ body {
 
 .metadata {
   display: none;
+  color: #cc1f2e;
 }
 
 .metadata small {
@@ -42,6 +42,6 @@ body {
 
 .externalplayer {
   font-size: 8pt;
-  color: #999;
+  color: color: #cc1f2e;
   color: rgba(255,255,255,.7);
 }
