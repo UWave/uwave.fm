@@ -20,7 +20,7 @@
                             (<a href="contact">list of departments and their emails here</a>).
                         <li><h4 class="red">Submit an announcement</a></h4>
                             Interested in promoting your group or event through UWave? Fill out <a href="https://docs.google.com/forms/d/1TyoM_hc1y2yPptSztskFrygPI4r6URx21GSx-1tbYNs/viewform" target="_blank">this
-                            form</a> above and smeone will get in contact with you.
+                            form</a> and someone will get in contact with you.
                         </ul>
                 </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
