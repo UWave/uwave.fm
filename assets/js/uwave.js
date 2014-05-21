@@ -3,13 +3,6 @@ $(document).ready(function() {
      window.location.hostname != "localhost") {
        $.getScript("assets/js/bugsense.min.js", function() {
           Bugsense.initAndStartSession({ apiKey: '9e74c309' });
-          $(document).ajaxError(function(event, xhr, settings, error) {
-            Bugsense.notify({
-              request: xhr,
-              settings: settings,
-              error: error
-            });
-          });
        });
     }
     $(".navli.listen").hide();
