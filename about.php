@@ -1,12 +1,12 @@
 <?php require('head.php'); ?>
                 <div class="content container">
-                  <h1>About Us</h1>
-                  <p><i>UWave Radio is the campus-based community station of the Bothell area and
-                  beyond. We are a center for community engagement, a hub for
-                  underrepresented voices and music, an environment for professional
-                  development, and a catalyst for social justice.</i></p><br />
+                    <h1>About Us</h1>
+                    <p><i>UWave Radio is the campus-based community station of the Bothell area and
+                    beyond. We are a center for community engagement, a hub for
+                    underrepresented voices and music, an environment for professional
+                    development, and a catalyst for social justice.</i></p><br />
 
-                  <p>We started in 2012, and have been building a radio station from
+                    <p>We started in 2012, and have been building a radio station from
                     scratch at <a href="https://www.uwb.edu" target="_blank">UW Bothell</a>.
                     We first started broadcasting online in the spring of 2013,
                     filling the schedue as we can and the rest with automated playback.
@@ -15,7 +15,7 @@
                     in the end of 2013. If granted, will be broadcasting an FM
                     signal for the campus and beyond.</p>
 
-                  <p>Our organization is broken into four departments, who handle
+                    <p>Our organization is broken into four departments, who handle
                     the key pieces of the station with the help of two directors
                     who tie everything together and ensure that everything gets
                     where it needs to be. The departments are as follows:</p>
@@ -31,14 +31,28 @@
                       <li><b class="red">Technology</b> runs the computers, website
                         and audio equipment, including the studio and servers.</li>
                     </ul>
+                    <div class="col-md-6">
+                        <h2>Other Student Publications <small>(AKA our BFFs)</small></h2>
+                        We are one of four student publications on campus:
+                        <ul>
+                          <li><b><a href="http://www.huskyherald.com/" target="_blank" class="red">Husky Herald</a></b>, the UW Bothell student newspaper.</li>
+                          <li><b><a href="http://uwbpolicyjournal.com/" target="_blank" class="red">UWB Policy Journal</a></b>, is a compilation of policy-related work submitted and published by students of the University of Washington Bothell.</li>
+                          <li><b><a href="http://clamor-journal.com/" target="_blank" class="red">Clamor</a></b>, is the literary and arts journal at UWB.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Want UWave Radio to DJ at your event?</h2>
 
-                    <h2>Other Student Publications <small>(AKA our BFFs)</small></h2>
-                    We are one of four student publications on campus:
-                    <ul>
-                      <li><b><a href="http://www.huskyherald.com/" target="_blank" class="red">Husky Herald</a></b>, the UW Bothell student newspaper.</li>
-                      <li><b><a href="http://uwbpolicyjournal.com/" target="_blank" class="red">UWB Policy Journal</a></b>, is a compilation of policy-related work submitted and published by students of the University of Washington Bothell.</li>
-                      <li><b><a href="http://clamor-journal.com/" target="_blank" class="red">Clamor</a></b>, is the literary and arts journal at UWB.</li>
-                    </ul>
+                        <p>Email
+                            <a href="mailtp:promotons@uwave.fm">promotions@uwave.fm</a>
+                            and include the day, time, location and purpose of
+                            this event. Please note that we require at least 3
+                            weeks notice in order to confirm DJs and reserve
+                            necessary equipment.</p>
+                        <i>UWave DJ's reserve the right to provide their own
+                            playlist for events</i>
+                    </div>
+
                   </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
                 </span>
