@@ -202,3 +202,7 @@ address {
   background-color: #aa1f2e;
   border-color: #aa1f2e;
 }
+
+.jumbotron {
+    background-color: inherit;
+}
