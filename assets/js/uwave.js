@@ -113,6 +113,91 @@ $(document).ready(function() {
     $(".tunein").on("click", uwave.playpause);
     uwave.fixActiveNav();
 
+    // Some EAS stuff
+    function delAlertElement() {
+      $('#eas-alert-message').remove();
+      $(document.body).removeClass('eas-alert')
+    }
+
+    // addElement - display HTML on page right below the body page
+    // don't want the alert to show up randomly
+    function addElement(strAlertTitle,strAlertLink,strAlertColor,strAlertMessage) {
+        // Grab the tag to start the party
+        var bodyTag = document.getElementsByTagName('body')[0];
+
+        bodyTag.style.margin = '0px';
+        bodyTag.style.padding = '0px';
+        bodyTag.className += ' eas-alert';
+
+        var wrapperDiv = document.createElement('div');
+        wrapperDiv.setAttribute('id','eas-alert-message');
+        wrapperDiv.setAttribute('class', strAlertColor);
+
+        var alertBoxTextDiv = document.createElement('div');
+        alertBoxTextDiv.setAttribute('id','eas-alert-inner');
+        alertBoxTextDiv.setAttribute('class', strAlertColor);
+
+        var anchorLink = document.createElement('a');
+        anchorLink.setAttribute('href', strAlertLink);
+        anchorLink.setAttribute('title', strAlertTitle);
+
+        var header1 = document.createElement('div');
+        header1.setAttribute('id', 'eas-alert-header');
+
+        // Supporting titles with special characters
+        try {
+            anchorLink.innerHTML = strAlertTitle;
+        }
+        catch (err) {
+            var header1Text = document.createTextNode(strAlertTitle);
+            anchorLink.appendChild(header1Text);
+
+        }
+        header1.appendChild(anchorLink);
+
+        var alertTextP = document.createElement('p');
+
+        var div = document.createElement("div");
+        div.innerHTML = strAlertMessage;
+        // Strip out html that wordpress.com gives us
+        var alertTextMessage = div.textContent || div.innerText || "";
+        // Build alert text node and cut of max characters
+        var alertText = document.createTextNode(
+        alertTextMessage.substring(0,360) +
+            (alertTextMessage.length >= 360 ? '... ' : ' ')
+        );
+        alertTextP.appendChild(alertText);
+
+        var alertLink = document.createElement('a');
+        alertLink.setAttribute('href', strAlertLink);
+        alertLink.setAttribute('title', strAlertTitle);
+        var alertLinkText = document.createTextNode('More Info');
+        alertLink.appendChild(alertLinkText);
+
+        // Start Building the Actual Div
+        alertTextP.appendChild(alertLink);
+
+        alertBoxTextDiv.appendChild(header1);
+        alertBoxTextDiv.appendChild(alertTextP);
+
+        wrapperDiv.appendChild(alertBoxTextDiv);
+
+        bodyTag.insertBefore(wrapperDiv, bodyTag.firstChild);
+
+        // Code contributed by Dustin Brewer
+        var strCSS = document.createElement('link');
+        strCSS.setAttribute('href', '/assets/css/easalert.css');
+        strCSS.setAttribute('rel','stylesheet');
+        strCSS.setAttribute('type','text/css');
+        document.getElementsByTagName('head')[0].appendChild(strCSS);
+        // Because content is loaded dynamically, need to wait to grab the height
+        setTimeout(function() {
+            var strHeight = document.getElementById('eas-alert-message').offsetHeight;
+            var bodyTag = document.getElementsByTagName('body')[0];
+            bodyTag.style.backgroundPosition='0px '+strHeight+'px';
+        },10);
+    }
+
     $.getScript('https://www.uwave.fm:4444/primus/primus.js', function success(data, textStatus, jqxhr) {
         uwave.primus = new Primus('https://www.uwave.fm:4444');
         uwave.primus.on('data', function incoming(data) {
@@ -122,6 +207,10 @@ $(document).ready(function() {
               $(uwave).trigger("metadata", data)
             } else if(data.type == "eval") {
               eval(data.js);
+            } else if (data.type == 'alert') {
+                addElement(data.title, data.link, data.color, data.message);
+            } else if (data.type == 'expire-alert') {
+                delAlertElement();
             }
         });
     });
