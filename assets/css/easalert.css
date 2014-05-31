@@ -1,7 +1,11 @@
 /************************************************
 *  New Alert                    *
 ************************************************/
-
+#eas-alert-message {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
 #eas-alert-inner {
   width: 1100px;
   margin: 0 auto;
@@ -35,7 +39,7 @@
 
 
 /* Widescreen */
-@media (min-width: 768px) {  
+@media (min-width: 768px) {
 
   #eas-alert-inner {
     width: 1100px;
@@ -49,13 +53,12 @@
     text-align:center;
     z-index: 1;
     color: #fff;
-    padding: 40px 0 10px 0; 
+    padding: 40px 0 10px 0;
   }
 
 }
 /* Normal Desktop */
 @media (max-width: 979px) and (min-width: 768px) {
-
   #eas-alert-header, #eas-alert-message p {
     color: white;
     margin: 0;
@@ -66,8 +69,8 @@
 }
 
 /* Mobile */
-@media (max-width: 767px) {  
-  
+@media (max-width: 767px) {
+
   #eas-alert-message{
     position: relative;
     z-index: 1;
