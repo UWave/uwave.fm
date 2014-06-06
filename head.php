@@ -58,9 +58,10 @@
                         </span>
                         <span class="col-md-3">
                             <ul class="nav masthead-nav">
-                                <li><a href="https://twitter.com/UWaveRadio" target = "_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://facebook.com/UWaveRadio" target = "_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://github.com/UWave" target = "_blank"><i class="fa fa-github"></i></a></li>
+                                <li><a href="http://yourvoiceyourvibe.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+                                <li><a href="https://twitter.com/UWaveRadio" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://facebook.com/UWaveRadio" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://github.com/UWave" target="_blank"><i class="fa fa-github"></i></a></li>
                             </ul>
                             <a href="/listen" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
                         </span>
