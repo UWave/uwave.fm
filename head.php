@@ -8,9 +8,11 @@
     <title>UWave Radio</title>
 
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link href="assets/css/uwave.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/uwave.css">
+
+    <link rel="shortcut icon" href="favicon.ico">
 
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
     <meta name="twitter:card" content="player">
