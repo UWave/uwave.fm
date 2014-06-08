@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="UWave Radio">
     <meta name="twitter:description" content="UWave Radio is the campus radio station for the University of Washington | Bothell.">
     <meta name="twitter:image" content="https://uwave.fm/assets/img/logo.png">
-    <meta name="twitter:player" content="https://uwave.fm/embed">
+    <meta name="twitter:player" content="https://uwave.fm/embed?autoplay">
 
     <meta name="twitter:player:width" content="480">
     <meta name="twitter:player:height" content="300">
