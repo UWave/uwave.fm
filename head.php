@@ -36,7 +36,7 @@
 
     <!-- Open Graph data for Facespace, etc -->
     <meta property="og:title" content="UWave Radio" />
-    <meta property="og:url" content="https://uwave.fm" />
+    <meta property="og:url" content="https://uwave.fm/<?php echo $_SERVER['REQUEST_URI']; ?>" />
     <meta property="og:image" content="https://uwave.fm/assets/img/uwave-square.png" />
     <meta property="og:description" content="UWave Radio is the campus-based community station of the Bothell area and beyond." />
     <meta property="og:site_name" content="uwave.fm" />
