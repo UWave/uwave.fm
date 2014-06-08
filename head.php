@@ -15,6 +15,8 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="player">
     <meta name="twitter:site" content="@UWaveRadio">
     <meta name="twitter:title" content="UWave Radio">
@@ -27,7 +29,18 @@
     <meta name="twitter:player:stream" content="https://uwave.fm/listen/128.ogg">
     <meta name="twitter:player:stream:content_type" content="audio/ogg">
 
+    <!-- Schema.org markup for G+, etc -->
+    <meta itemprop="name" content="UWave Radio">
+    <meta itemprop="description" content="UWave Radio is the campus-based community station of the Bothell area and beyond.">
+    <meta itemprop="image" content="https://uwave.fm/assets/img/logo.png">
 
+    <!-- Open Graph data for Facespace, etc -->
+    <meta property="og:title" content="UWave Radio" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://uwave.fm" />
+    <meta property="og:image" content="https://uwave.fm/assets/img/logo.png" />
+    <meta property="og:description" content="UWave Radio is the campus-based community station of the Bothell area and beyond." />
+    <meta property="og:site_name" content="uwave.fm" />  
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
