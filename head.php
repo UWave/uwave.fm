@@ -66,7 +66,7 @@
                                 <li class="navli getinvolved"><a href="/getinvolved" class="navlink">Get Involved</a></li>
                                 <li class="navli contact"><a href="/contact" class="navlink">Contact Us</a></li>
                                 <li class="navli schedule"><a href="/schedule" class="navlink">Schedule</a></li>
-                                <li class="navli listen"><a href="/listen" class="navlink">Listen</a></li>
+                                <li class="navli listen"><a href="/external" class="navlink">Listen</a></li>
                                 <li class="navli donate"><a href="/donate" class="navlink">Donate</a></li>
                             </ul>
                         </span>
@@ -77,7 +77,7 @@
                                 <li><a href="https://facebook.com/UWaveRadio" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave" target="_blank"><i class="fa fa-github"></i></a></li>
                             </ul>
-                            <a href="/listen" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
+                            <a href="/external" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
                         </span>
                     </div>
                 </div>

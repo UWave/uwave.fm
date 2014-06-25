@@ -11,7 +11,7 @@
         <source src="/listen/128.ogg" type="audio/ogg">
         <source src="/listen/128.mp3" type="audio/mp3">
     </audio>
-    <a href="/listen" class="btn btn-lg btn-play">
+    <a href="/external" class="btn btn-lg btn-play">
       <img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br />
       <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Listen to UWave</span>
     </a><br />

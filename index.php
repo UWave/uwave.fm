@@ -1,11 +1,11 @@
 <?php require('head.php'); ?>
                 <div class="inner cover">
                     <p class="lead">
-                        <a href="/listen" class="btn btn-lg btn-play">
+                        <a href="/external" class="btn btn-lg btn-play">
                           <img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br />
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
                         </a><br />
-                        <a href="/listen" class="navlink externalplayer">External Player</a><br />
+                        <a href="/external" class="navlink externalplayer">External Player</a><br />
                         <span class="metadata"></span>
                     </p>
                 </div>
