@@ -13,7 +13,7 @@
                             hour program length, and require that your show correspond with <a class="navlink" href="/about">UWave
                             Radio goals</a>.
                         <li><h4 class="red">Attend a meeting</h4>
-                            UWave meets every week on Friday from 1:15pm to 3:15pm in HH1210 (on
+                            UWave meets every other week on Friday from 1:15pm to 3:15pm in HH1210 (on
                             the <a href="https://www.uwb.edu" target="_blank">UW Bothell</a> campus). If you can't
                             make that, it's okay! Most departments meet at other times. If you know
                             which department you want to help out with, reach out to them by email
