@@ -44,7 +44,7 @@
                         <h2>Want UWave Radio to DJ at your event?</h2>
 
                         <p>Email
-                            <a href="mailtp:promotons@uwave.fm">promotions@uwave.fm</a>
+                            <a href="mailto:promotons@uwave.fm">promotions@uwave.fm</a>
                             and include the day, time, location and purpose of
                             this event. Please note that we require at least 3
                             weeks notice in order to confirm DJs and reserve
