@@ -2,34 +2,33 @@
                 <div class="content container">
                     <h1>About Us</h1>
                     <p><i>UWave Radio is the campus-based community station of the Bothell area and
-                    beyond. We are a center for community engagement, a hub for
-                    underrepresented voices and music, an environment for professional
-                    development, and a catalyst for social justice.</i></p><br />
+                      beyond. We are a center for community engagement, a hub for underrepresented
+                      voices and music, an environment for professional development, and a
+                      catalyst for social justice.</i></p><br />
 
-                    <p>We started in 2012, and have been building a radio station from
-                    scratch at <a href="https://www.uwb.edu" target="_blank">UW Bothell</a>.
-                    We first started broadcasting online in the spring of 2013,
-                    filling the schedue as we can and the rest with automated playback.
-                    We applied for the FCC's LPFM (Low Power FM)
-                    <a href="http://cdbs.recnet.net/fmq.php?facid=197326">broadcast application</a>
-                    in the end of 2013. If granted, will be broadcasting an FM
-                    signal for the campus and beyond.</p>
+                    <p>In 2012, a group of <a href="https://www.uwb.edu" target="_blank">University of Washington Bothell</a> students who shared a
+                      common interest in community media began building a radio station from scratch.
+                      We started broadcasting online in the spring of 2013 with a mixture of talk,
+                      music, and educational programming. Over the last year, we applied and were
+                      approved for a Low Power FM license from the FCC. You can view our future
+                      broadcast range <a href="http://cdbs.recnet.net/fmq.php?facid=197326" target="_blank">here</a>. Within the next year, we hope our listeners will be tuning
+                      in from their homes, work, cars, and online. We are growing every day! To learn
+                      more, visit out <a href="/getinvolved">get involved page</a>.</p>
 
-                    <p>Our organization is broken into four departments, who handle
-                    the key pieces of the station with the help of two directors
-                    who tie everything together and ensure that everything gets
-                    where it needs to be. The departments are as follows:</p>
+                    <p>Our organization is broken into four departments. Each department is made up
+                      of two directors who manage the workflow and a group of volunteers who make
+                      sure things get done. The departments are as follows:</p>
 
                     <ul>
-                      <li><b class="red">Business</b> handles everything businessy.
-                      Legal paperwork, funding sources, etc.</li>
-                      <li><b class="red">Programming</b> handles what's on the
-                        air. They organize shows, curate the music library.</li>
-                      <li><b class="red">Promotions</b> tells people about UWave.
-                        They coordinate our message, do outreach and work with
-                        other groups on and offcampus to hold events.</li>
-                      <li><b class="red">Technology</b> runs the computers, website
-                        and audio equipment, including the studio and servers.</li>
+                      <li><b class="red">Business</b>  is in charge of the little details:
+                        underwriting content, legal inquiries, fundraising, connecting with
+                        local businesses, etc.</li>
+                      <li><b class="red">Programming</b> manages on-air content. They organize shows,
+                        curate the music library, and train new hosts and DJs.</li>
+                      <li><b class="red">Promotions</b> is the voice of UWave. They get the word out
+                        about volunteer opportunities, fundraisers and upcoming events.</li>
+                      <li><b class="red">Technology</b> runs the computers, website and audio equipment,
+                        including the studio and servers.</li>
                     </ul>
                     <div class="col-md-6">
                         <h2>Other Student Publications <small>(AKA our BFFs)</small></h2>

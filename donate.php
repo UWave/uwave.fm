@@ -22,7 +22,8 @@
                         No. You can also donate with a check or cash by mail to:<br /><br />
                         <address>
                             Box 358528<br />
-                            118115 Campus Way NE, UW1, Suite 281<br />
+                            18115 Campus Way NE<br />
+                            UW1, Suite 281<br />
                             Bothell WA 98011-8246<br />
                         </address>
                         For check donations, please pay to the order of the University of Washington.
