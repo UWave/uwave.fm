@@ -2,7 +2,7 @@
                 <div class="content container">
                     <h1>Contact UWave</h1>
                     If you have any questions or otherwise need to get in touch with us, the best
-                    way is just to email <a href="mailto:info@uwave.fm" class="red">info@uwave.fm</a> or use our <a href="https://docs.google.com/forms/d/1Ag2a3Bex2wnsRtBtZPdQ0JdXc0iwaGMDhWA4LEo98l4/viewform" target="_blank">feedback form</a>.<br />
+                    way is just to email <a href="mailto:info@uwave.fm" class="red">info@uwave.fm</a>.<br />
 
                     To contact a speciic department:<br />
                     <ul>
@@ -13,12 +13,7 @@
                     </ul>
                     <br />
                     Additionally, you can call the studio at <font class="red">(425) 352-WAVE</font> (9283).<br /><br />
-                    Our mailing address is:<br /><br />
-                        <address>
-                            18115 Campus Way NE<br />
-                            Box 358561<br />
-                            Bothell, WA 98011
-                        </address>
+                    Feel free to drop us a note via our <a href="https://docs.google.com/forms/d/1Ag2a3Bex2wnsRtBtZPdQ0JdXc0iwaGMDhWA4LEo98l4/viewform" target="_blank" class="red">feedback form</a>!
                 </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
                 </span>
