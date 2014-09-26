@@ -2,7 +2,7 @@
                 <div class="content container">
                     <h1>Contact UWave</h1>
                     If you have any questions or otherwise need to get in touch with us, the best
-                    way is just to email <a href="mailto:info@uwave.fm" class="red">info@uwave.fm</a>.<br />
+                    way is just to email <a href="mailto:info@uwave.fm" class="red">info@uwave.fm</a> or use our <a href="https://docs.google.com/forms/d/1Ag2a3Bex2wnsRtBtZPdQ0JdXc0iwaGMDhWA4LEo98l4/viewform" target="_blank">feedback form</a>.<br />
 
                     To contact a speciic department:<br />
                     <ul>
