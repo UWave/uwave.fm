@@ -14,6 +14,9 @@
                     <br />
                     Additionally, you can call the studio at <font class="red">(425) 352-WAVE</font> (9283).<br /><br />
                     Feel free to drop us a note via our <a href="https://docs.google.com/forms/d/1Ag2a3Bex2wnsRtBtZPdQ0JdXc0iwaGMDhWA4LEo98l4/viewform" target="_blank" class="red">feedback form</a>!
+
+                    <br /><br />
+                    A lot of our organization occurs on our mailing lists. For the general list, <a href="https://mailman11.u.washington.edu/mailman/listinfo/kuwb">click here</a>, more department specific lists can be found on the <a href="https://sites.google.com/a/uw.edu/radio/mailing-lists">wiki</a>
                 </div>
                 <?php if(!isset($_GET['contentonly'])) {?>
                 </span>
