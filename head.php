@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google+ Verification -->
-    <a href="https://plus.google.com/102826019998418575041" rel="publisher">Google+</a>
     <title>UWave Radio</title>
 
     <!-- Bootstrap -->
