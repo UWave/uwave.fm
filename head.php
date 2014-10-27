@@ -1,6 +1,12 @@
-<?php if(!isset($_GET['contentonly'])) { ?>
+<?php
+$settings = array("online" => TRUE);
+if(file_exists("settings.json")) {
+  $settings = json_decode(file_get_contents("settings.json"));
+}
+if(!isset($_GET['contentonly'])) { ?>
 <!DOCTYPE html>
 <html lang="en">
+  <!-- <?php print_r($settings); ?>-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,12 +84,16 @@
                                 <li><a href="https://facebook.com/UWaveRadio" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave" target="_blank"><i class="fa fa-github"></i></a></li>
                             </ul>
+                            <?php if($settings->online) {?>
                             <a href="/external" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
+                            <?php } ?>
                         </span>
                     </div>
                 </div>
+                <?php if($settings->online) {?>
                 <audio id="player" preload="none">
                     <source src="/listen/128.ogg" type="audio/ogg">
                     <source src="/listen/128.mp3" type="audio/mp3">
                 </audio>
+                <?php } ?>
                 <span class="pagecontents"><?php } ?>
