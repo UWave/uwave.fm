@@ -7,7 +7,7 @@
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
                         </a><br />
                           <?php } else {
-                            echo "<img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br /><br /><b>";
+                            echo "<img src=\"assets/img/swoosh.png\" alt=\"UWave swoosh shape\"><br /><br /><b>";
                             if(array_key_exists("reason", $settings)) {
                               echo $settings->reason;
                             } else {
