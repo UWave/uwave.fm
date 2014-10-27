@@ -13,7 +13,7 @@
                             } else {
                               echo "We are currently offline";
                             }
-                            echo "</b>";
+                            echo "</b><br />";
                           } ?>
                         <a href="/external" class="navlink externalplayer">External Player</a><br />
                         <span class="metadata"></span>
