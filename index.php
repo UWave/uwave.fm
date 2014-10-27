@@ -1,12 +1,13 @@
 <?php require('head.php'); ?>
                 <div class="inner cover">
                     <p class="lead">
+                        <?php if($settings->online) {?>
                         <a href="/external" class="btn btn-lg btn-play">
                           <img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br />
-                          <?php if($settings->online) {?>
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
+                        </a><br />
                           <?php } else {
-                            echo "<br /><b>";
+                            echo "<img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br /><br /><b>";
                             if(array_key_exists("reason", $settings)) {
                               echo $settings->reason;
                             } else {
@@ -14,7 +15,6 @@
                             }
                             echo "</b>";
                           } ?>
-                        </a><br />
                         <a href="/external" class="navlink externalplayer">External Player</a><br />
                         <span class="metadata"></span>
                     </p>
