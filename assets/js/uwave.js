@@ -221,7 +221,7 @@ $(document).ready(function() {
     }, placement: 'bottom'})
 
     //TODO: This URL should be relative when we launch
-    $.get("https://uwave.fm/listen/now-playing.json").success(function(data) {
+    $.get("/listen/now-playing.json").success(function(data) {
       uwave.metadata = data;
       uwave.updateMetadata();
     });
