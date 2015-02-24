@@ -1,8 +1,8 @@
 <?php
 $settings = array("online" => TRUE);
-if(file_exists("settings.json")) {
-  $settings = json_decode(file_get_contents("settings.json"));
-}
+// if(file_exists("settings.json")) {
+//   $settings = json_decode(file_get_contents("settings.json"));
+// }
 if(!isset($_GET['contentonly'])) { ?>
 <!DOCTYPE html>
 <html lang="en">
