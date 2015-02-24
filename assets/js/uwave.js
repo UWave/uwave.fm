@@ -57,7 +57,7 @@ $(document).ready(function() {
         $(".metadata").hide();
     });
     $(uwave.player).on("play", function() {
-      $(".playtext").text("Erry day i'm bufferin...")
+      $(".playtext").text("Erry day I'm bufferin...")
     });
 
     $(uwave).on("pageload", function() {
