@@ -13,7 +13,11 @@
                       approved for a Low Power FM license from the FCC. You can view our future
                       broadcast range <a href="http://cdbs.recnet.net/fmq.php?facid=197326" target="_blank">here</a>. Within the next year, we hope our listeners will be tuning
                       in from their homes, work, cars, and online. We are growing every day! To learn
-                      more, visit out <a href="/getinvolved">get involved page</a>.</p>
+                      more, visit our <a href="/getinvolved">get involved page</a>.</p>
+
+                    <p>UWave Radio campaign video:<br />
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AAbr7phzfCg" frameborder="0" allowfullscreen></iframe>
+                    </p>
 
                     <p>Our organization is broken into four departments. Each department is made up
                       of two directors who manage the workflow and a group of volunteers who make
