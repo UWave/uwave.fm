@@ -72,6 +72,7 @@ if(!isset($_GET['contentonly'])) { ?>
                                 <li class="navli about"><a href="/about" class="navlink">About</a></li>
                                 <li class="navli getinvolved"><a href="/getinvolved" class="navlink">Get Involved</a></li>
                                 <li class="navli contact"><a href="/contact" class="navlink">Contact Us</a></li>
+                                <li class="navli psa"><a href="/psa" class="navlink">PSAs</a></li>
                                 <li class="navli schedule"><a href="/schedule" class="navlink">Schedule</a></li>
                                 <li class="navli listen"><a href="/external" class="navlink">Listen</a></li>
                                 <li class="navli donate"><a href="/donate" class="navlink">Donate</a></li>
