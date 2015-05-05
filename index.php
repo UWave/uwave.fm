@@ -18,7 +18,7 @@
                         <a href="/external" class="navlink externalplayer">External Player</a><br />
                         <span class="metadata"></span>
                     </p>
-                    <p>
+                    <p class="red">
                         <a href="http://uwave.fm/petition" target="_blank">Sign our petition to help UWave Radio get on the air.</a>
                     </p>
                 </div>
