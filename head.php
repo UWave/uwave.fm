@@ -43,7 +43,7 @@ if(!isset($_GET['contentonly'])) { ?>
         "name": "UWave Radio",
         "url": "https://uwave.fm",
         "logo": "https://uwave.fm/assets/img/uwave-square.png",
-        "description": "UWave Radio is the campus-based community station of the Bothell area and beyond."
+        "description": "UWave Radio is the campus-based community station of the Bothell area and beyond.",
         "sameAs": [
           "https://www.facebook.com/UWaveRadio",
           "https://twitter.com/UWaveRadio",
