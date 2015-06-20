@@ -6,7 +6,6 @@ if(file_exists("settings.json")) {
 if(!isset($_GET['contentonly'])) { ?>
 <!DOCTYPE html>
 <html lang="en">
-  <!-- <?php print_r($settings); ?>-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,9 +36,21 @@ if(!isset($_GET['contentonly'])) { ?>
     <meta name="twitter:player:stream:content_type" content="audio/ogg">
 
     <!-- Schema.org markup for G+, etc -->
-    <meta itemprop="name" content="UWave Radio">
-    <meta itemprop="description" content="UWave Radio is the campus-based community station of the Bothell area and beyond.">
-    <meta itemprop="image" content="https://uwave.fm/assets/img/uwave-square.png">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "UWave Radio",
+        "url": "https://uwave.fm",
+        "logo": "https://uwave.fm/assets/img/uwave-square.png",
+        "description": "UWave Radio is the campus-based community station of the Bothell area and beyond."
+        "sameAs": [
+          "https://www.facebook.com/UWaveRadio",
+          "https://twitter.com/UWaveRadio",
+          "https://plus.google.com/+UwaveFm"
+        ]
+      }
+    </script>
 
     <!-- Open Graph data for Facespace, etc -->
     <meta property="og:title" content="UWave Radio" />
