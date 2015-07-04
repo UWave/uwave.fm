@@ -15,6 +15,7 @@ $(document).ready(function() {
 
     uwave.playpause = function(e) {
         if(player.paused) {
+            player.volume = $(".volume").val();
             player.play();
             $(".playpause")
                 .removeClass("glyphicon-play-circle")
@@ -220,7 +221,6 @@ $(document).ready(function() {
       }
     }, placement: 'bottom'})
 
-    //TODO: This URL should be relative when we launch
     $.get("/listen/now-playing.json").success(function(data) {
       uwave.metadata = data;
       uwave.updateMetadata();
@@ -241,6 +241,11 @@ $(document).ready(function() {
       });
       $(uwave.player).on("stalled", function() {
         ga('send', 'event', 'tunein', 'stalled');
+      });
+
+
+      $(".volume").on('input', function() {
+        uwave.player.volume = $(".volume").val();
       });
     }
 });

@@ -6,6 +6,8 @@
                           <img src="assets/img/swoosh.png" alt="UWave swoosh shape"><br />
                           <i class="playpause glyphicon glyphicon-play-circle"></i> <span class="playtext">Tune in</span>
                         </a><br />
+                        <i class="fa fa-volume-up red"></i> <input type="range" min="0" max="1" step="0.1" value="0.7" class="volume" />
+                        <br />
                           <?php } else {
                             echo "<img src=\"assets/img/swoosh.png\" alt=\"UWave swoosh shape\"><br /><br /><b>";
                             if(array_key_exists("reason", $settings)) {

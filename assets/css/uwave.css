@@ -205,3 +205,130 @@ address {
 .jumbotron {
     background-color: inherit;
 }
+
+.volume {
+  width: 100px !important;
+  display: inline !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+
+/* https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+/* Applying base CSS styles */
+
+.volume::-webkit-slider-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+.volume:focus {
+  outline: none;
+}
+
+.volume::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+
+/* Styling the Thumb */
+
+/* Special styling for WebKit/Blink */
+.volume::-webkit-slider-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 5px;
+  background: #000000;
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+.volume::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.volume::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* Styling the Track */
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #aa1f2e;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+.volume:focus::-webkit-slider-runnable-track {
+  background: #aa1f2e;
+}
+
+.volume::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 10px;
+  border: 0.2px solid #3071a9;
+}
+
+.volume::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  border-radius: 10px;
+  border: 0.2px solid #3071a9;
+}
+
+.volume::-ms-fill-lower {
+  background: #aa1f2e;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.volume:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+
+.volume::-ms-fill-upper {
+  background: #aa1f2e;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.volume:focus::-ms-fill-upper {
+  background: #aa1f2e;
+}
