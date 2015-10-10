@@ -1,10 +1,8 @@
 <?php
 $triggerword = rtrim($_POST['trigger_word'], ":");
 if($_POST['token'] != file_get_contents("/etc/slacktoken").trim()) {
-  die("Invalid token");
-}
-
-if(file_exists($triggerword.".php")) {
+  echo json_encode(array("text" => "Invalid token"));
+} else if(file_exists($triggerword.".php")) {
     require($triggerword.".php");
 } else {
     $attachment = array("fields" => array());
