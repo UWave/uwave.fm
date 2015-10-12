@@ -1,5 +1,5 @@
 <?php
-$triggerword = rtrim($_POST['trigger_word'], ":");
+$triggerword = strtolower(rtrim($_POST['trigger_word'], ":"));
 if($_POST['token'] != trim(file_get_contents("/etc/slacktoken"))) {
   echo json_encode(array("text" => "Invalid token"));
 } else if(file_exists($triggerword.".php")) {
