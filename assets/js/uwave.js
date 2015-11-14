@@ -22,14 +22,16 @@ $(document).ready(function() {
             $(".tunein").addClass("pause");
             $(uwave).trigger("play");
         } else {
-            player.pause()
+            player.pause();
             $(".playpause")
                 .removeClass("glyphicon-pause")
                 .addClass("glyphicon-play-circle");
             $(".tunein").removeClass("pause");
             $(uwave).trigger("pause");
         }
-        e.preventDefault();
+        if(e) {
+          e.preventDefault();
+        }
     };
 
     uwave.updateMetadata = function() {
