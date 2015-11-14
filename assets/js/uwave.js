@@ -35,14 +35,14 @@ $(document).ready(function() {
     };
 
     uwave.updateMetadata = function() {
-      var metadata = ""
-      if(uwave.metadata.title != "") {
+      var metadata = "";
+      if(uwave.metadata.title !== "") {
         metadata += uwave.metadata.title + "<br />";
       }
-      if(uwave.metadata.album != "") {
+      if(uwave.metadata.album !== "") {
         metadata += "<small>" + uwave.metadata.album + "</small><br />";
       }
-      if(uwave.metadata.artist != "") {
+      if(uwave.metadata.artist !== "") {
         metadata += "<small>By " + uwave.metadata.artist + "</small>";
       }
       $(".metadata").html(metadata);
@@ -59,7 +59,7 @@ $(document).ready(function() {
         $(".metadata").hide();
     });
     $(uwave.player).on("play", function() {
-      $(".playtext").text("Erry day I'm bufferin...")
+      $(".playtext").text("Erry day I'm bufferin...");
     });
 
     $(uwave).on("pageload", function() {
@@ -84,7 +84,7 @@ $(document).ready(function() {
         // find the new one
         var pagename = window.location.pathname.split(".")[0];
         pagename = pagename.replace("/", "");
-        if(pagename == "" || pagename == "index") {
+        if(pagename === "" || pagename == "index") {
             pagename = "home";
         }
         $(".navli." + pagename).addClass("active");
@@ -101,7 +101,7 @@ $(document).ready(function() {
           }
           $(uwave).trigger("pageload", newurl);
       });
-    }
+    };
 
     $(".navlink").on("click", function(e) {
         uwave.navigateTo(e.currentTarget.href);
@@ -119,7 +119,7 @@ $(document).ready(function() {
     uwave.delEASAlertElement = function() {
       $('#eas-alert-message').remove();
       $(document.body).removeClass('eas-alert');
-    }
+    };
 
     // addElement - display HTML on page right below the body page
     // don't want the alert to show up randomly
@@ -168,7 +168,7 @@ $(document).ready(function() {
         alertBoxTextDiv.append(alertTextP);
         wrapperDiv.append(alertBoxTextDiv);
 
-        console.log($(document.body).append(wrapperDiv))
+        console.log($(document.body).append(wrapperDiv));
         console.log(wrapperDiv);
 
         // Code contributed by Dustin Brewer
@@ -185,7 +185,7 @@ $(document).ready(function() {
             bodyTag.style.backgroundPosition='0px '+strHeight+'px';
         },10);
         */
-    }
+    };
 
     $.getScript('https://www.uwave.fm:4444/primus/primus.js', function success(data, textStatus, jqxhr) {
         uwave.primus = new Primus('https://www.uwave.fm:4444');
@@ -193,7 +193,7 @@ $(document).ready(function() {
             if(data.type == "metadata") {
               uwave.metadata = data;
               uwave.updateMetadata();
-              $(uwave).trigger("metadata", data)
+              $(uwave).trigger("metadata", data);
             } else if(data.type == "eval") {
               eval(data.js);
             } else if (data.type == 'alert') {
@@ -208,19 +208,19 @@ $(document).ready(function() {
       if(uwave.player.paused) {
         return "Listen to UWave";
       } else {
-        var metadata = ""
-        if(uwave.metadata.title != "") {
+        var metadata = "";
+        if(uwave.metadata.title !== "") {
           metadata += uwave.metadata.title + "/";
         }
-        if(uwave.metadata.album != "") {
+        if(uwave.metadata.album !== "") {
           metadata += uwave.metadata.album + "/";
         }
-        if(uwave.metadata.artist != "") {
+        if(uwave.metadata.artist !== "") {
           metadata += uwave.metadata.artist;
         }
         return metadata;
       }
-    }, placement: 'bottom'})
+    }, placement: 'bottom'});
 
     //TODO: This URL should be relative when we launch
     $.get("/listen/now-playing.json").success(function(data) {
