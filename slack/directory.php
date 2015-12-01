@@ -19,7 +19,7 @@ if($ds) {
   $text = "Search returned ".$results['count']." ".$entries;
   $attachments = array();
 
-  for($i = 0; $i < $results['count']; $i++) {
+  for($i = 0; $i < $results['count'] && $i < 5; $i++) {
     $fields = array();
     foreach($fieldsToSearch as $key => $name) {
       $fields[] = array('title' => $name, 'value' => $results[$i][$key][0], 'short' => True);
