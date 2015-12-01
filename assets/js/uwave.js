@@ -8,7 +8,8 @@ $(document).ready(function() {
     $(".navli.listen").hide();
     window.uwave = {
       metadata: {},
-      primus: null
+      primus: null,
+      alert_forced_play: false
     };
 
     uwave.player = document.getElementById("player");
@@ -29,7 +30,7 @@ $(document).ready(function() {
             $(".tunein").removeClass("pause");
             $(uwave).trigger("pause");
         }
-        if(e) {
+        if (e !== null) {
           e.preventDefault();
         }
     };
@@ -198,6 +199,15 @@ $(document).ready(function() {
               eval(data.js);
             } else if (data.type == 'alert') {
                 uwave.addEASElement(data.title, data.link, data.color, data.message);
+                if (player.paused) {
+                    uwave.playpause(null);
+                    uwave.alert_forced_play = true;
+                }
+            } else if (data.type == 'alert-playout-ended') {
+                if (uwave.alert_forced_play) {
+                    uwave.playpause(null);
+                    uwave.alert_forced_play = false;
+                }
             } else if (data.type == 'expire-alert') {
                 uwave.delEASAlertElement();
             }
