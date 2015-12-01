@@ -7,7 +7,7 @@ if(isset($argv[1])) {
   $search = $argv;
 }
 array_shift($search); // Either way, the first element isn't used
-$search = implode($search, " ");
+$search = implode($search, "*");
 if($ds) {
   $r = ldap_bind($ds);
   $sr = ldap_search($ds, "o=University of Washington, c=US", "(|(cn=*$search*))");
