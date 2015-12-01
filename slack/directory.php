@@ -26,7 +26,11 @@ if($ds) {
   for($i = 0; $i < $results['count'] && $i < 5; $i++) {
     $fields = array();
     foreach($fieldsToSearch as $key => $name) {
-      $fields[] = array('title' => $name, 'value' => $results[$i][$key][0], 'short' => True);
+      $value = "_(not listed)_";
+      if(isset($results[$i][$key])) {
+        $value = $results[$i][$key][0];
+      }
+      $fields[] = array('title' => $name, 'value' => $value, 'short' => True);
     }
     $attachments[] = array('fields' => $fields);
   }
