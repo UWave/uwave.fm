@@ -16,7 +16,11 @@ if($ds) {
   if($results['count'] == 1) {
     $entries = "entry";
   }
-  $text = "Search returned ".$results['count']." ".$entries;
+  $end = ".";
+  if($results['count'] > 5) {
+    $end = ". Only the first 5 entries are shown. Check the <https://www.washington.edu/home/peopledir/|UW Directory> for more.";
+  }
+  $text = "Search returned ".$results['count']." ".$entries.$end;
   $attachments = array();
 
   for($i = 0; $i < $results['count'] && $i < 5; $i++) {
