@@ -1,0 +1,3 @@
+[submodule "console/assets/libs/favico.js"]
+	path = console/assets/libs/favico.js
+	url = https://github.com/ejci/favico.js
