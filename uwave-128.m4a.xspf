@@ -4,16 +4,14 @@
   <creator/>
   <trackList>
     <track>
-      <location>http://live.uwave.fm:8000/listen-128.m4a</location>
+      <location>https://live.uwave.fm:8443/listen-128.m4a</location>
       <title/>
       <annotation>Stream Title: UWave Radio
 Stream Description: Your Voice, Your Vibe
 Content Type:audio/aac
 Bitrate: 128
-Current Listeners: 0
-Peak Listeners: 3
 Stream Genre: live</annotation>
-      <info>http://www.uwave.fm</info>
+      <info>https://uwave.fm</info>
     </track>
   </trackList>
 </playlist>

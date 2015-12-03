@@ -4,7 +4,7 @@
   <creator/>
   <trackList>
     <track>
-      <location>http://live.uwave.fm:8000/listen-128.mp3</location>
+      <location>https://live.uwave.fm:8443/listen-128.mp3</location>
       <title>The Beatles - We Can Work It Out</title>
       <annotation>Stream Title: UWave Radio
 Stream Description: Your Voice, Your Vibe
@@ -13,7 +13,7 @@ Bitrate: 128
 Current Listeners: 0
 Peak Listeners: 12
 Stream Genre: live</annotation>
-      <info>http://www.uwave.fm</info>
+      <info>https://uwave.fm</info>
     </track>
   </trackList>
 </playlist>
