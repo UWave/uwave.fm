@@ -46,13 +46,8 @@
                     <div class="col-md-6">
                         <h2>Want UWave Radio to DJ at your event?</h2>
 
-                        <p>Email
-                            <a href="mailto:promotons@uwave.fm">promotions@uwave.fm</a>
-                            and include the day, time, location and purpose of
-                            this event. Please note that we require at least 3
-                            weeks notice in order to confirm DJs and reserve
-                            necessary equipment.</p>
-                        <i>UWave DJ's reserve the right to provide their own
+                        <p>For events (primarily on campus), fill out <a target="_blank" href="https://docs.google.com/forms/d/1STT_SlNuJ9-Bm5B47V8CK-iBE29GnuFQaD0X00CzjuU/viewform">this form</a>. We require at minimum 4 weeks notice.<br />
+                          <i>UWave DJ's reserve the right to provide their own
                             playlist for events</i>
                     </div>
 
