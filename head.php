@@ -95,6 +95,7 @@ if(!isset($_GET['contentonly'])) { ?>
                                 <li><a href="https://twitter.com/UWaveRadio" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="https://facebook.com/UWaveRadio" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://github.com/UWave" target="_blank"><i class="fa fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/uwaveradio/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                             <?php if($settings->online) {?>
                             <a href="/external" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
