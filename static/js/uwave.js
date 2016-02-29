@@ -92,7 +92,7 @@ $(document).ready(function() {
     };
 
     uwave.navigateTo = function(newurl) {
-      $.get(newurl + "?contentonly").success(function(data) {
+      $.get(newurl + "?contentonly=yes").success(function(data) {
           $(".pagecontents").html(data);
           history.pushState(null, null, newurl);
           uwave.fixActiveNav();
