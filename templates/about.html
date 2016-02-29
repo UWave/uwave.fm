@@ -1,4 +1,5 @@
-<?php require('head.php'); ?>
+{% extends "layout.html" %}
+{% block body %}
                 <div class="content container">
                     <h1>About Us</h1>
                     <p><i>UWave Radio is the campus-based community station of the Bothell area and
@@ -52,12 +53,4 @@
                     </div>
 
                   </div>
-                <?php if(!isset($_GET['contentonly'])) {?>
-                </span>
-            </div>
-        </div>
-    </div>
-<?php require("foot.php"); ?>
-</body>
-</html>
-<?php } ?>
+{% endblock %}
