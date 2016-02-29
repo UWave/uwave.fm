@@ -1,4 +1,5 @@
-<?php require('head.php'); ?>
+{% extends "layout.html" %}
+{% block body %}
                 <div class="content container">
                     <h1>Get Involved</h1>
                     There are a number of ways to get involved in UWave:
@@ -23,12 +24,4 @@
                             form</a> and someone will get in contact with you.
                         </ul>
                 </div>
-                <?php if(!isset($_GET['contentonly'])) {?>
-                </span>
-            </div>
-        </div>
-    </div>
-<?php require("foot.php"); ?>
-  </body>
-</html>
-<?php } ?>
+{% endblock %}

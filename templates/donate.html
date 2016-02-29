@@ -1,4 +1,5 @@
-<?php require('head.php'); ?>
+{% extends "layout.html" %}
+{% block body %}
                 <div class="content container">
                     <h1>Donate</h1>
                     We accept donations through our gift account with the UW.<br /><br /><br />
@@ -59,13 +60,5 @@
                     For more information on UWave Radio, please visit our <a href="about">about</a> page.
 
                     Thank you for supporting UWave Radio, UWBs student-run community radio station!
-                </div>
-                <?php if(!isset($_GET['contentonly'])) {?>
-                </span>
-            </div>
-        </div>
-    </div>
-<?php require("foot.php"); ?>
-  </body>
-</html>
-<?php } ?>
+                </div>              
+{% endblock %}
