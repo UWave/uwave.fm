@@ -18,9 +18,28 @@
 
 
                     <table class="table table-condensed">
-                    <tr><td>ogg</td><td><a href="/uwave-128.ogg.m3u"><i class="fa fa-volume-up"></i> m3u</a></td><td><a href="/uwave-128.ogg.xspf"><i class="fa fa-volume-up"></i> xspf</a></td></tr>
-                    <tr><td>mp3</td><td><a href="/uwave-128.mp3.m3u"><i class="fa fa-volume-up"></i> m3u</a></td><td><a href="/uwave-128.mp3.xspf"><i class="fa fa-volume-up"></i> xspf</a></td></tr>
-                    <tr><td>aac</td><td><a href="/uwave-128.m4a.m3u"><i class="fa fa-volume-up"></i> m3u</a></td><td><a href="/uwave-128.m4a.xspf"><i class="fa fa-volume-up"></i> xspf</a></td></tr>
+                    <tr><td>ogg</td>
+                      <td>
+                        <a href="{{ url_for('static', filename='uwave-128.ogg.m3u')}}"><i class="fa fa-volume-up"></i>m3u</a>
+                      </td>
+                    <td>
+                      <a href="{{ url_for('static', filename='uwave-128.ogg.xspf')}}"><i class="fa fa-volume-up"></i> xspf</a>
+                    </td>
+                  </tr>
+                    <tr><td>mp3</td>
+                      <td>
+                        <a href="{{ url_for('static', filename='uwave-128.mp3.m3u')}}"><i class="fa fa-volume-up"></i> m3u</a>
+                      </td>
+                      <td>
+                        <a href="{{ url_for('static', filename='uwave-128.mp3.xspf')}}"><i class="fa fa-volume-up"></i> xspf</a>
+                      </td></tr>
+                    <tr><td>aac</td>
+                      <td>
+                        <a href="{{ url_for('static', filename='uwave-128.m4a.m3u')}}"><i class="fa fa-volume-up"></i> m3u</a>
+                      </td>
+                      <td>
+                        <a href="{{ url_for('static', filename='uwave-128.m4a.xspf')}}"><i class="fa fa-volume-up"></i> xspf</a>
+                      </td></tr>
                     </table>
                 </div>
                 {% endblock %}
