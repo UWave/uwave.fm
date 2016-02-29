@@ -1,3 +1,4 @@
+{% if not contentonly %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,14 +75,14 @@
                         </span>
                         <span class="col-md-6">
                             <ul class="nav masthead-nav">
-                                <li class="navli home"><a href="." class="navlink">Home</a></li>
-                                <li class="navli about"><a href="/about" class="navlink">About</a></li>
-                                <li class="navli getinvolved"><a href="/getinvolved" class="navlink">Get Involved</a></li>
-                                <li class="navli contact"><a href="/contact" class="navlink">Contact Us</a></li>
-                                <li class="navli psa"><a href="/psa" class="navlink">PSAs</a></li>
-                                <li class="navli schedule"><a href="/schedule" class="navlink">Schedule</a></li>
-                                <li class="navli listen"><a href="/external" class="navlink">Listen</a></li>
-                                <li class="navli donate"><a href="/donate" class="navlink">Donate</a></li>
+                                <li class="navli home"><a href="{{ url_for('index') }}" class="navlink">Home</a></li>
+                                <li class="navli about"><a href="{{ url_for('fullpage', page='about') }}" class="navlink">About</a></li>
+                                <li class="navli getinvolved"><a href="{{ url_for('fullpage', page='getinvolved') }}" class="navlink">Get Involved</a></li>
+                                <li class="navli contact"><a href="{{ url_for('fullpage', page='contact') }}" class="navlink">Contact Us</a></li>
+                                <li class="navli psa"><a href="{{ url_for('fullpage', page='psa') }}" class="navlink">PSAs</a></li>
+                                <li class="navli schedule"><a href="{{ url_for('fullpage', page='schedule') }}" class="navlink">Schedule</a></li>
+                                <li class="navli listen"><a href="{{ url_for('fullpage', page='external') }}" class="navlink">Listen</a></li>
+                                <li class="navli donate"><a href="{{ url_for('fullpage', page='donate') }}" class="navlink">Donate</a></li>
                             </ul>
                         </span>
                         <span class="col-md-3">
@@ -103,7 +104,7 @@
                     <source src="/listen/128.ogg" type="audio/ogg">
                     <source src="/listen/128.mp3" type="audio/mp3">
                 </audio>
-              <span class="pagecontents">{% block body %}{% endblock %}</span>
+              <span class="pagecontents">{% endif %}{% block body %}{% endblock %}{% if not contentonly %}</span>
     <div class="mastfoot">
         <div class="inner">
             <p><a href="http://uwave.fm/petition" target="_blank" class="red">Sign our petition to help UWave Radio get on the air.</a></p>
@@ -128,3 +129,6 @@
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
     </script>
+  </body>
+</html>
+{% endif %}
