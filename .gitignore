@@ -1,5 +1,7 @@
 *.swp
-
+*~
+nohup.out
+env/
 settings.json
 slack/webcam/\*.jpg
 console/proxies/inc/settings.inc.php
