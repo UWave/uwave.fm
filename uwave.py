@@ -30,12 +30,12 @@ def favicon():
 @app.route('/apple-touch-icon-precomposed.png')
 def apple_touch_icon_precomposed():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'static/img/apple-touch-icon-precomposed.png')
+                               'img/apple-touch-icon-precomposed.png')
 
 @app.route('/apple-touch-icon.png')
 def apple_touch_icon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'static/img/apple-touch-icon.png')
+                               'img/apple-touch-icon.png')
 
 
 @app.route('/githook', methods=["POST"])
