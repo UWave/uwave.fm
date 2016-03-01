@@ -27,6 +27,17 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+@app.route('/apple-touch-icon-precomposed.png')
+def apple_touch_icon_precomposed():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'static/img/apple-touch-icon-precomposed.png')
+
+@app.route('/apple-touch-icon.png')
+def apple_touch_icon_precomposed():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'static/img/apple-touch-icon.png')
+
+
 @app.route('/githook', methods=["POST"])
 def githook():
     subprocess.call(['git', 'pull'])
