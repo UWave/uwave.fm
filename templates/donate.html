@@ -32,8 +32,8 @@
                         take some time for you to receive acknowledgment for a check or cash contribution.</li>
 
                         <center>
-                          <a href="assets/img/check.jpg" target="_BLANK">
-                            <img src="assets/img/check.jpg" width="40%" alt="Sample Check"/>
+                          <a href="{{ url_for('static', filename='img/check.jpg') }}" target="_BLANK">
+                            <img src="{{ url_for('static', filename='img/check.jpg') }}" width="40%" alt="Sample Check"/>
                           </a>
                         </center>
 
@@ -60,5 +60,5 @@
                     For more information on UWave Radio, please visit our <a href="about">about</a> page.
 
                     Thank you for supporting UWave Radio, UWBs student-run community radio station!
-                </div>              
+                </div>
 {% endblock %}
