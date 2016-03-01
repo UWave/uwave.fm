@@ -129,6 +129,9 @@
       ga('require', 'linkid', 'linkid.js');
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
+      $(document).ready(function() {
+          $(".btn-play").on("click", uwave.playpause);
+      });
     </script>
   </body>
 </html>
