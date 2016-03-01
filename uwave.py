@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 from flask import Flask, render_template, request, send_from_directory
+import os
 import jinja2.exceptions
 app = Flask(__name__)
 
@@ -18,7 +19,7 @@ def fullpage(page):
     try:
         return render_template('%s.html' % page, contentonly=contentonly)
     except jinja2.exceptions.TemplateNotFound:
-        return "404"
+        return render_template('404.html', contentonly=contentonly)
 
 @app.route('/favicon.ico')
 def favicon():
