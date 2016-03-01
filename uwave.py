@@ -30,6 +30,7 @@ def favicon():
 @app.route('/githook', methods=["POST"])
 def githook():
     subprocess.call(['git', 'pull'])
+    return "kthx"
 
 
 if __name__ == "__main__":
