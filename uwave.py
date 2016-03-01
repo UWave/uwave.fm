@@ -5,6 +5,8 @@ import os
 import jinja2.exceptions
 app = Flask(__name__)
 
+app.config['online'] = True
+
 @app.route("/")
 def index():
     contentonly = False

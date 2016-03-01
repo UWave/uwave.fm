@@ -49,7 +49,7 @@
 
     <!-- Open Graph data for Facespace, etc -->
     <meta property="og:title" content="UWave Radio" />
-    <meta property="og:url" content="https://uwave.fm<?php echo $_SERVER['REQUEST_URI']; ?>" />
+    <meta property="og:url" content="https://uwave.fm{{ request.path }}" />
     <meta property="og:image" content="https://uwave.fm/static/img/uwave-square.png" />
     <meta property="og:description" content="UWave Radio is the campus-based community station of the Bothell area and beyond." />
     <meta property="og:site_name" content="uwave.fm" />
@@ -93,17 +93,18 @@
                                 <li><a href="https://github.com/UWave" target="_blank"><i class="fa fa-github"></i></a></li>
 				<li><a href="https://www.instagram.com/uwaveradio/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
-                            <!-- <?php if($settings->online) {?> -->
+                            {% if config.online %}
                             <a href="/external" class="tunein topbutton red"><i class="glyphicon glyphicon-play-circle playpause"></i></a>
-                            <!-- <?php } ?> -->
+                            {% endif %}
                         </span>
                     </div>
                 </div>
-                <!-- <?php if($settings->online) {?> -->
+                {% if config.online %}
                 <audio id="player" preload="none">
                     <source src="https://live.uwave.fm/listen/128.ogg" type="audio/ogg">
                     <source src="https://live.uwave.fm/listen/128.mp3" type="audio/mp3">
                 </audio>
+                {% endif %}
               <span class="pagecontents">{% endif %}{% block body %}{% endblock %}{% if not contentonly %}</span>
     <div class="mastfoot">
         <div class="inner">
