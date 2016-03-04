@@ -1,10 +1,25 @@
 {
   "monday": [
     {
-      "name": "Democracy Now!",
+      "name": "Democracy Now",
       "start": 1100,
       "end": 1200,
-      "description": "stuff"
+      "description": ""
+    }, {
+      "name": "Settling the Score",
+      "start": 1200,
+      "end": 1400,
+      "description": "Tune in with your host David Gillespie as he discusses news and updates and shares his opinions on collegiate and professional sports.Get your daily dose of football, baseball, and basketball talk here!"
+    }, {
+      "name": "DJ JG's Literary Hour",
+      "start": 1400,
+      "end": 1500,
+      "description": ""
+    }, {
+      "name": "The Sample Platter",
+      "start": 1600,
+      "end": 1700,
+      "description": ""
     }
   ]
 }
