@@ -7,12 +7,14 @@ app = Flask(__name__)
 
 app.config['online'] = True
 
+
 @app.route("/")
 def index():
     contentonly = False
     if "contentonly" in request.args:
         contentonly = True
     return render_template('index.html', contentonly=contentonly)
+
 
 @app.route("/<page>")
 def fullpage(page):
@@ -24,15 +26,23 @@ def fullpage(page):
     except jinja2.exceptions.TemplateNotFound:
         return render_template('404.html', contentonly=contentonly)
 
+
+@app.route("/api/<data>.json")
+def schedule_json(data):
+    return send_from_directory('api', "%s.json" % data)
+
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+
 @app.route('/apple-touch-icon-precomposed.png')
 def apple_touch_icon_precomposed():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'img/apple-touch-icon-precomposed.png')
+
 
 @app.route('/apple-touch-icon.png')
 def apple_touch_icon():
