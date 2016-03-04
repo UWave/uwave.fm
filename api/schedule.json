@@ -21,5 +21,28 @@
       "end": 1700,
       "description": ""
     }
+  ],
+  "tuesday": [
+    {
+      "name": "Tea Time",
+      "start": 900,
+      "end": 1100,
+      "description": "DJ Iris features all kinds of British music, for the first half, while providing interesting information about the artists. In the second half, I will play an hour of encouraging Christian music, but these singers and groups will not necessarily be from the UK."
+    }, {
+      "name": "Democracy Now",
+      "start": 1100,
+      "end": 1200,
+      "description": ""
+    }, {
+      "name": "Grandpa's Jukebox",
+      "start": 1330,
+      "end": 1500,
+      "description": "Grandpa's Jukebox is focused on bringing listeners the best swing, jazz, big band and easy listening hits from the 1930's, 40's and 50's. The show features music from Dean Martin, Frank Sinatra, Doris Day, Bob Crosby, Benny Goodman and many other artists and bands from the era. In addition to music, there are periodic short announcements regarding campus events and historical notes related to the theme of the show."
+    }, {
+      "name": "Kickin' It Old School",
+      "start": 1630,
+      "end": 1730,
+      "description": ""
+    }
   ]
 }
