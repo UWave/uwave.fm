@@ -2,46 +2,46 @@
   "monday": [
     {
       "name": "Democracy Now",
-      "start": 1100,
-      "end": 1200,
+      "start": "11:00",
+      "end": "12:00",
       "description": ""
     }, {
       "name": "Settling the Score",
-      "start": 1200,
-      "end": 1400,
+      "start": "12:00",
+      "end": "14:00",
       "description": "Tune in with your host David Gillespie as he discusses news and updates and shares his opinions on collegiate and professional sports.Get your daily dose of football, baseball, and basketball talk here!"
     }, {
       "name": "DJ JG's Literary Hour",
-      "start": 1400,
-      "end": 1500,
+      "start": "14:00",
+      "end": "15:00",
       "description": ""
     }, {
       "name": "The Sample Platter",
-      "start": 1600,
-      "end": 1700,
+      "start": "16:00",
+      "end": "17:00",
       "description": ""
     }
   ],
   "tuesday": [
     {
       "name": "Tea Time",
-      "start": 900,
-      "end": 1100,
+      "start": "09:00",
+      "end": "11:00",
       "description": "DJ Iris features all kinds of British music, for the first half, while providing interesting information about the artists. In the second half, I will play an hour of encouraging Christian music, but these singers and groups will not necessarily be from the UK."
     }, {
       "name": "Democracy Now",
-      "start": 1100,
-      "end": 1200,
+      "start": "11:00",
+      "end": "12:00",
       "description": ""
     }, {
       "name": "Grandpa's Jukebox",
-      "start": 1330,
-      "end": 1500,
+      "start": "13:30",
+      "end": "15:00",
       "description": "Grandpa's Jukebox is focused on bringing listeners the best swing, jazz, big band and easy listening hits from the 1930's, 40's and 50's. The show features music from Dean Martin, Frank Sinatra, Doris Day, Bob Crosby, Benny Goodman and many other artists and bands from the era. In addition to music, there are periodic short announcements regarding campus events and historical notes related to the theme of the show."
     }, {
       "name": "Kickin' It Old School",
-      "start": 1630,
-      "end": 1730,
+      "start": "16:30",
+      "end": "17:30",
       "description": ""
     }
   ]
