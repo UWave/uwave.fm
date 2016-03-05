@@ -4,7 +4,7 @@ $baseurl = "https://uwave.fm";
 
 $path = "/slack/webcam/".date("Y-m-d_H:i:s").".jpg";
 
-exec("avconv -f video4linux2 -s 1920x1080 -i /dev/video1 -ss 0:0:2 -vf \"transpose=1\" -frames 1 ".$documentroot.$path);
+exec("avconv -f video4linux2 -s 1920x1080 -i /dev/video0 -ss 0:0:2 -vf \"transpose=1\" -frames 1 ".$documentroot.$path);
 
 echo json_encode(array(
   "text" => "Here's a picture of the mixing board",
