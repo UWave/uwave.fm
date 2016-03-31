@@ -27,7 +27,7 @@ if($ds) {
     $fields = array();
     foreach($fieldsToSearch as $key => $name) {
       if(isset($results[$i][$key])) {
-        for($j = 0; $j < $results[$i]['key']['count']; $j++) {
+        for($j = 0; $j < $results[$i][$key]['count']; $j++) {
           $fields[] = array('title' => $name, 'value' => $results[$i][$key][$j], 'short' => True);
         }
       }
