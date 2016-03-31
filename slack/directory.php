@@ -10,7 +10,7 @@ array_shift($search); // Either way, the first element isn't used
 $search = implode($search, "*");
 if($ds) {
   $r = ldap_bind($ds);
-  $sr = ldap_search($ds, "o=University of Washington, c=US", "(|(cn=*$search*))");
+  $sr = ldap_search($ds, "o=University of Washington, c=US", "(|(cn=*$search*)(mail=$search)(telephoneNumber=*$search)(homePhone=*$search))");
   $results = ldap_get_entries($ds, $sr);
   $entries = "entries";
   if($results['count'] == 1) {
