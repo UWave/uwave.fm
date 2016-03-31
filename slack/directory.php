@@ -1,7 +1,7 @@
 <?php
 $ds = ldap_connect("directory.washington.edu");
 $error = False;
-$fieldsToSearch = array('cn' => "Name", 'mail' => "Email", 'homephone' => "Phone", "title" => "Major/Title");
+$fieldsToSearch = array('cn' => "Name", 'mail' => "Email", 'homephone' => "Phone", "telephonenumber" => "Phone", "title" => "Major/Title");
 $search = explode(" ", $_POST['text']);
 if(isset($argv[1])) {
   $search = $argv;
@@ -26,11 +26,12 @@ if($ds) {
   for($i = 0; $i < $results['count'] && $i < 5; $i++) {
     $fields = array();
     foreach($fieldsToSearch as $key => $name) {
-      $value = "_(not listed)_";
       if(isset($results[$i][$key])) {
-        $value = $results[$i][$key][0];
+        for($j = 0; $j < $results['count']; $j++) {
+          $value = $results[$i][$key][0];
+          $fields[] = array('title' => $name, 'value' => $value, 'short' => True);
+        }
       }
-      $fields[] = array('title' => $name, 'value' => $value, 'short' => True);
     }
     $attachments[] = array('fields' => $fields);
   }
