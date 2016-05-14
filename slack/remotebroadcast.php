@@ -4,7 +4,7 @@ $message = "Something's broken pretty bad. Sorry ¯\_(ツ)_/¯";
 
 function affirmative_response() {
   $response = array("k", "mkay", "whatever", "done", "uggg fine");
-  return $response[array_random($response)];
+  return $response[array_rand($response)];
 }
 
 switch($arg) {
