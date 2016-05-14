@@ -1,9 +1,11 @@
 <?php
 $arg = $_POST['text'];
 $message = "Something's broken pretty bad. Sorry ¯\_(ツ)_/¯";
+
 switch($arg) {
   case "remotebroadcast start":
-    exec("rmlsend 'PX 1 050002!'");
+    exec("rmlsend 'PX 1 050035!'");  # Record Game Night
+    exec("rmlsend 'PX 1 050002!'");  # Trigger remote broadcast
     $message = "k";
   break;
   case "remotebroadcast stop":
