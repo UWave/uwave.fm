@@ -2,10 +2,10 @@
 $arg = $_POST['text'];
 $message = "Something's broken pretty bad. Sorry ¯\_(ツ)_/¯";
 switch($arg) {
-  case "start":
+  case "remotebroadcast start":
     $message = exec("rmlsend PX 0 050002!");
   break;
-  case "stop":
+  case "remotebroadcast stop":
     $message = exec("rmlsend PX 0 050004!");
   break;
   default:
