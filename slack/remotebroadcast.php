@@ -10,6 +10,7 @@ switch($arg) {
   break;
   default:
     $message = "Yeah i dunno what to do about that.";
+    error_log("Unknown command $arg");
   break;
 }
 
