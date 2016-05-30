@@ -14,8 +14,8 @@ switch($arg) {
     $message = affirmative_response();
   break;
   case "remotebroadcast stop":
-    exec("rmlsend 'PX 1 050004!'");  # add the End Remote Broadcast cart to next
     exec("rmlsend 'PN 1!'");  # Play the next cart
+    exec("rmlsend 'PX 1 050004!'");  # add the End Remote Broadcast cart to next
     $message = affirmative_response();
   break;
   default:
