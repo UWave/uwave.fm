@@ -1,17 +1,22 @@
 <?php
 $arg = $_POST['text'];
 $message = "Something's broken pretty bad. Sorry ¯\_(ツ)_/¯";
+$show_mapping = json_decode(file_get_contents("/etc/remote_broadcasts.json"), true);
 
 function affirmative_response() {
-  $response = array("k", "mkay", "whatever", "done", "uggg fine");
+  $response = array("k", "mkay", "whatever", "done", "uggg fine", ":thumbsup:", ":fuckyou:", ":wink:");
   return $response[array_rand($response)];
 }
 
 switch($arg) {
   case "remotebroadcast start":
-    exec("rmlsend 'PX 1 050035!'");  # Record Game Night
-    exec("rmlsend 'PX 1 050002!'");  # Trigger remote broadcast
-    $message = affirmative_response();
+    if(isset($show_mappings[$_POST['user_name']])) {
+      exec("rmlsend 'PX 1 ".$show_mappings[$_POST['user_name']]."!'");  # Record Game Night
+      exec("rmlsend 'PX 1 050002!'");  # Trigger remote broadcast
+      $message = affirmative_response();
+    } else {
+      $message = "I'm sorry ".$_POST['user_name'].", I'm afraid I can't do that (hint: have one of the tech guys add you to `/etc/remote_broadcasts.json`)";
+    }
   break;
   case "remotebroadcast stop":
     exec("rmlsend 'PN 1!'");  # Play the next cart
