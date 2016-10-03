@@ -10,8 +10,8 @@ function affirmative_response() {
 
 switch($arg) {
   case "remotebroadcast start":
-    if(isset($show_mappings[$_POST['user_name']])) {
-      exec("rmlsend 'PX 1 ".$show_mappings[$_POST['user_name']]."!'");  # Record Game Night
+    if(isset($show_mapping[$_POST['user_name']])) {
+      exec("rmlsend 'PX 1 ".$show_mapping[$_POST['user_name']]."!'");  # Begin recording
       exec("rmlsend 'PX 1 050002!'");  # Trigger remote broadcast
       $message = affirmative_response();
     } else {
@@ -22,6 +22,16 @@ switch($arg) {
     exec("rmlsend 'PN 1!'");  # Play the next cart
     exec("rmlsend 'PX 1 050004!'");  # add the End Remote Broadcast cart to next
     $message = affirmative_response();
+  break;
+  case "remotebroadcast info":
+    if(isset($show_mapping[$_POST['user_name']])) {
+      $message = "You are ".$_POST['user_name']." and your show's record cart is `".$show_mapping[$_POST['user_name']]."`";
+    } else {
+      $message = "Youa re ".$_POST['user_name']." but I don't know what show is yours.";
+    }
+  break;
+  case "remotebroadcast mappings":
+    $message = "```\n".json_encode($show_mapping, JSON_PRETTY_PRINT)."\n```";
   break;
   default:
     $message = "Yeah i dunno what to do about that.";
