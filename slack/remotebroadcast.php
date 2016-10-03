@@ -27,7 +27,7 @@ switch($arg) {
     if(isset($show_mapping[$_POST['user_name']])) {
       $message = "You are ".$_POST['user_name']." and your show's record cart is `".$show_mapping[$_POST['user_name']]."`";
     } else {
-      $message = "Youa re ".$_POST['user_name']." but I don't know what show is yours.";
+      $message = "You are ".$_POST['user_name']." but I don't know what show is yours.";
     }
   break;
   case "remotebroadcast mappings":
