@@ -1,4 +1,0 @@
-<IfModule mod_headers.c>
-    SetEnvIf Origin "http(s)?://(www\.)?(uwave.fm)$" AccessControlAllowOrigin=$0$1
-    Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
-</IfModule>
