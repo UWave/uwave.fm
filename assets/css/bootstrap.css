@@ -63,9 +63,16 @@ h1 {
   margin: .67em 0;
   font-size: 2em;
 }
+*mark {
+*  color: #000;
+*  background: #ff0;
+*}
+*/ Trying to change the background color
 mark {
-  color: #000;
-  background: #ff0;
+  color: #b7a57a;
+  */ this is the color of???, it is intended to be gold
+  background: #4b2e83;
+  */ This background hex was intended to make the background purple
 }
 small {
   font-size: 80%;
