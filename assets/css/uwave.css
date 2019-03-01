@@ -16,7 +16,7 @@ a:hover {
 .btn-play:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #4b2e83;
-  color: #ccc;
+  color: #4b2e83;
   border: 0;
 }
 
@@ -85,7 +85,7 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #cc1f2e;
+  color: #4b2e83;
   border-bottom-color: #fff;
 }
 
@@ -149,7 +149,7 @@ body {
 .red:hover,
 .red:active,
 .red:visited {
-    color: #cc1f2e;
+    color: #4b2e83;
 }
 
 .content {
