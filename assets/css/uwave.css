@@ -6,7 +6,9 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  /*  color: #fff; 
+  Attemping to change the URL colors to gold*/
+  color: #b7a57a;
   text-decoration: underline;
 }
 
@@ -15,8 +17,11 @@ a:hover {
 .btn-play:hover,
 .btn-play:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #000000;
-  color: #000000;
+  /* background-color: #333;
+  color: #ccc;
+  Attemping to change play button bg to purple and color gold*/
+  background-color: #4b2e83;
+  color: #b7a57a;
   border: 0;
 }
 
@@ -28,7 +33,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #fff;
+  /*  background-color: #333;*/
+  background-color: #4b2e83;
 }
 body {
   color: #4b2e83;
