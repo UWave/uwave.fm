@@ -15,7 +15,7 @@ a:hover {
 .btn-play:hover,
 .btn-play:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #333;
+  background-color: #4b2e83;
   color: #ccc;
   border: 0;
 }
