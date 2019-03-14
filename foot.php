@@ -2,7 +2,7 @@
         <div class="inner">
             <p><a href="http://uwave.fm/petition" target="_blank" class="red">Sign our petition to help UWave Radio get on the air.</a></p>
             <noscript><b class="red">This site works best with Javascript enabled</b></noscript>
-            <p>This site copyright &copy; 2018 UWave Radio. Some rights reserved. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">CC BY NC SA</a>. What we play may be licensed differently.</p>
+            <p>This site copyright &copy; 2019 UWave Radio. Some rights reserved. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">CC BY NC SA</a>. What we play may be licensed differently.</p>
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
