@@ -8,7 +8,7 @@ a:focus,
 a:hover {
   /*  color: #fff; 
   Attemping to change the URL colors to gold*/
-  color: #4b2e83;
+  color: #b7a57a;
   text-decoration: underline;
 }
 
@@ -37,7 +37,9 @@ body {
   background-color: #4b2e83;
 }
 body {
-  color: #4b2e83;
+ /* color: #4b2e83;
+  trying to change text color to gold */
+  color: #b7a57a;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
