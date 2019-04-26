@@ -174,8 +174,8 @@ body {
     height: 100%;
     /* color: #ccc; 
     gold??  */
-    color: #fff;
-   /*Tried changing this value to white. I believe it was making most text purple.   */
+    /*color: #fff;
+   /*Tried just commenting this color. I believe it was making most text purple, but we changed it to #fff to try white, it didn't work.   */
     text-align: left;
 }
 
