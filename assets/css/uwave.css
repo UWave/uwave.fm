@@ -164,7 +164,7 @@ body {
 .red:hover,
 .red:active,
 .red:visited {
-    color: #4b2e83;
+  /*  color: #4b2e83;   Tried to make the click-able link text (such as "Business" under About) not be purple anymore  */
 }
 
 .content {
