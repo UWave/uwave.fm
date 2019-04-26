@@ -164,7 +164,7 @@ body {
 .red:hover,
 .red:active,
 .red:visited {
-  /*  color: #4b2e83;   Tried to make the click-able link text (such as "Business" under About) not be purple anymore  */
+   color: #b7a57a;  /* Tried to make the click-able link text (such as "Business" under About) not be purple anymore  */
 }
 
 .content {
@@ -174,7 +174,7 @@ body {
     height: 100%;
     /* color: #ccc; 
     gold??  */
-    /*color: #fff;
+   color: #b7a57a;
    /*Tried just commenting this color. I believe it was making most text purple, but we changed it to #fff to try white, it didn't work.   */
     text-align: left;
 }
