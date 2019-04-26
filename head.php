@@ -74,7 +74,7 @@ if(!isset($_GET['contentonly'])) { ?>
                     <div class="inner">
                         <span class="col-md-3">
                             <ul class="nav masthead-nav">
-                                <li><a href="." class="navlink"><img src="assets/img/uwave.png" alt="UWave" /></a></li>
+                                <li><a href="." class="navlink"><img src="assets/img/UWAVE-textonly.png" alt="UWave" /></a></li>
                             </ul>
                         </span>
                         <span class="col-md-6">
