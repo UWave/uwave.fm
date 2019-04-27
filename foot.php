@@ -1,11 +1,12 @@
-  <!-- <div class="mastfoot">
+<div class="mastfoot">
         <div class="inner">
-            <p><a href="http://uwave.fm/petition" target="_blank" class="red">Sign our petition to help UWave Radio get on the air.</a></p>
+             <!--  <p><a href="http://uwave.fm/petition" target="_blank" class="red">Sign our petition to help UWave Radio get on the air.</a></p>
+                           Trying to get rid of the old "Sign our Petition" footer          -->          
             <noscript><b class="red">This site works best with Javascript enabled</b></noscript>
-            <p>This site copyright &copy; 2018 UWave Radio. Some rights reserved. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">CC BY NC SA</a>. What we play may be licensed differently.</p>
+            <p>This site copyright &copy; 2019 UWave Radio. Some rights reserved. <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">CC BY NC SA</a>. What we play may be licensed differently.</p>
         </div>
     </div>                      
-          Trying to get rid of the old "Sign our Petition" footer          -->
+ 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
